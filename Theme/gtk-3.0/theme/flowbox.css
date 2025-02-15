@@ -1,0 +1,7 @@
+flowboxchild {
+  padding: 3px;
+}
+flowboxchild:selected {
+  border-radius: 3px;
+  background: @color__orange_mid;
+}

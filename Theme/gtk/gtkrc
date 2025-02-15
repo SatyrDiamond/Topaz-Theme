@@ -1,0 +1,31 @@
+#needs: xfonts-base
+#style "font" {
+#fontset="-schumacher-clean-medium-r-normal-*-12-*-*-*-c-*-iso8859-1"} 
+#widget_class "*" style "font"
+
+style "font" { 
+fontset="-misc-fixed-medium-r-normal--10-100-75-75-c-60-iso8859-1"} 
+widget_class "*" style "font"
+
+style"gtkwidget"{
+fg[NORMAL]="#A0A0A0"
+fg[PRELIGHT]="#A0A0A0"
+fg[SELECTED]="#242424"
+fg[ACTIVE]="#A0A0A0"
+fg[INSENSITIVE]="#a6a6a6"
+bg[NORMAL]="#242424"
+bg[PRELIGHT]="#242424"
+bg[SELECTED]="#242424"
+bg[ACTIVE]="#242424"
+bg[INSENSITIVE]="#242424"
+base[NORMAL]="#242424"
+base[PRELIGHT]="#242424"
+base[SELECTED]="#A0A0A0"
+base[ACTIVE]="#A0A0A0"
+base[INSENSITIVE]="#242424"
+text[NORMAL]="#A0A0A0"
+text[PRELIGHT]="#A0A0A0"
+text[SELECTED]="#242424"
+text[ACTIVE]="#242424"
+text[INSENSITIVE]="#a6a6a6"}
+class"GtkWidget"style"gtkwidget"

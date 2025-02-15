@@ -1,0 +1,181 @@
+.nemo-window box.sidebar {
+  border: 0;
+}
+
+.nemo-window .nemo-window-pane scrolledwindow.view {
+  background: @color__orange_dark;
+}
+
+.nemo-window .nemo-window-pane scrolledwindow.view widget.view:selected {
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+
+.nemo-window .nemo-window-pane scrolledwindow.view widget.view widget.entry {
+  background: @color__orange_dark;
+  color: @color__orange_light;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  border-radius: 2px;
+}
+
+.nemo-window
+  .nemo-window-pane
+  scrolledwindow.view
+  widget.view
+  widget.entry:selected {
+  background: @color__orange_mid;
+  color: @color__orange_light;
+}
+
+.nemo-window box.nemo-window-pane .rubberband,
+.nemo-desktop-window>grid.vertical>paned.horizontal>box.vertical>paned.horizontal>box.vertical.nemo-window-pane>notebook>stack>box.vertical>overlay>nemo-desktop-icon-view>widget.view.nemo-desktop>widget.rubberband,
+window.background.nemo-window.nemo-desktop-window>grid.vertical>paned.horizontal>box.vertical>paned.horizontal>box.vertical.nemo-window-pane>notebook>stack>box.vertical>overlay>nemo-desktop-icon-view>widget.view.nemo-desktop>widget.rubberband {
+  border: 1px solid @border_color;
+  background-color: alpha(@color__orange_mid, 0.4);
+}
+
+.nemo-desktop.nemo-canvas-item,
+window.nemo-desktop-window.nemo-window.background
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.nemo-window-pane.vertical
+  > notebook
+  > stack
+  > box.vertical
+  > overlay
+  > nemo-desktop-icon-view
+  > widget
+  > widget.view.nemo-desktop {
+  -gtk-icon-effect: none;
+  font-weight: 700;
+  background: 0 0;
+  text-shadow: 0px 1px 2px @shadow_color;
+}
+
+.nemo-desktop.nemo-canvas-item:hover,
+window.nemo-desktop-window.nemo-window.background
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.nemo-window-pane.vertical
+  > notebook
+  > stack
+  > box.vertical
+  > overlay
+  > nemo-desktop-icon-view
+  > widget
+  > widget.view.nemo-desktop:hover {
+  -gtk-icon-effect: none;
+  text-shadow: 0px 1px 2px @shadow_color;
+}
+
+
+window.nemo-desktop-window.nemo-window.background
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.nemo-window-pane.vertical
+  > notebook
+  > stack
+  > box.vertical
+  > overlay
+  > nemo-desktop-icon-view
+  > widget
+  > widget.view.nemo-desktop:selected {
+  -gtk-icon-effect: none;
+  background: @color__orange_mid;
+  text-shadow: none;
+}
+
+scrolledwindow.nemo-places-sidebar > treeview.places-treeview {
+  -NemoPlacesTreeView-disk-full-bar-width: 0;
+  -NemoPlacesTreeView-disk-full-bar-radius: 0;
+  -NemoPlacesTreeView-disk-full-bottom-padding: 0;
+  -NemoPlacesTreeView-disk-full-max-length: 0;
+  -gtk-icon-style: regular;
+}
+
+.nemo-window toolbar.primary-toolbar.horizontal button {
+  padding: 0;
+  margin: 2px 0;
+  -gtk-icon-style: symbolic;
+  min-width: 22px;
+  min-height: 22px;
+  transition:0;
+}
+
+.nemo-window toolbar.primary-toolbar.horizontal button.text-button {
+  padding: 0px 5px;
+}
+
+.nemo-window toolbar.primary-toolbar.horizontal toolitem button box > image,
+.nemo-window toolbar.primary-toolbar.horizontal toolitem button box > label,
+.nemo-window toolbar.primary-toolbar.horizontal toolitem button > image,
+.nemo-window toolbar.primary-toolbar.horizontal toolitem button > label {
+  color: @color__gray_light;
+  -gtk-icon-style: symbolic;
+}
+
+.nemo-window
+  toolbar.primary-toolbar.horizontal
+  toolitem
+  button
+  box
+  > image:backdrop,
+.nemo-window
+  toolbar.primary-toolbar.horizontal
+  toolitem
+  button
+  box
+  > label:backdrop,
+.nemo-window
+  toolbar.primary-toolbar.horizontal
+  toolitem
+  button
+  > image:backdrop,
+.nemo-window
+  toolbar.primary-toolbar.horizontal
+  toolitem
+  button
+  > label:backdrop {
+  -gtk-icon-style: symbolic;
+}
+
+.nemo-window toolbar.primary-toolbar.horizontal entry {
+  margin: 0;
+}
+
+.nemo-window widget > box.horizontal.toolbar > * {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -NemoIconContainer-activate-prelight-icon-label: true;
+}
+
+.nemo-canvas-item:hover:not(:selected),
+.nemo-desktop.nemo-canvas-item:hover:not(:selected),
+window.background.nemo-window.nemo-desktop-window>grid.vertical>paned.horizontal>box.vertical>paned.horizontal>box.vertical.nemo-window-pane>notebook>stack>box.vertical>overlay>nemo-desktop-icon-view>widget.view.nemo-desktop>widget.nemo-desktop.nemo-canvas-item:hover {
+  background-color: alpha(@color__orange_mid, 0.2);
+  background-image: none;
+  text-shadow: none;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+window.nemo-window>grid.vertical>widget>box.toolbar:not(.primary-toolbar) {
+  box-shadow:none;
+  min-height:0px;
+}
+window.nemo-window>grid.vertical>widget>box.toolbar:not(.primary-toolbar)>button.image-button {
+  margin:0px;
+  padding:0px;
+  min-height:24px;
+  min-width:24px;
+}

@@ -1,0 +1,109 @@
+checkbutton {
+  margin: 3px;
+}
+checkbutton > check {
+  margin: 0 5px;
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  background: @color__gray_dark;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.1) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+  padding: 0;
+  color: @color__gray_light;
+  transition: all 0.5s;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-unchecked-symbolic");
+}
+checkbutton > check:indeterminate {
+  color: @color__orange_light;
+  border: 1px solid alpha(@shadow_color, 0.3);
+  background: alpha(@color__orange_mid, 0.5);
+  -gtk-icon-shadow: alpha(@shadow_color, 0.3) 0px -1px;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  transition: all 0.5s;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-semi-symbolic");
+}
+checkbutton > check:checked {
+  color: @color__orange_light;
+  border: 1px solid alpha(@shadow_color, 0.5);
+  background: @color__orange_mid;
+  -gtk-icon-shadow: alpha(@shadow_color, 0.3) 0px -1px;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  transition: all 0.5s;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-checked-symbolic");
+}
+.view > check,
+popover modelbutton > check {
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 2px;
+  border: 1px solid alpha(@color__gray_light, 0.4);
+  color: @color__gray_light;
+  transition:0;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-unchecked-symbolic");
+}
+.view > check:checked,
+popover modelbutton > check:checked {
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-checked-symbolic");
+}
+.view > check:indeterminate,
+popover modelbutton > check:indeterminate {
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-semi-symbolic");
+}
+.view > check:selected {
+  border: 1px solid alpha(@color__orange_light, 0.5);
+  color: @color__orange_light;
+}
+menuitem > check {
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 2px;
+  border: 1px solid alpha(@color__gray_light, 0.4);
+  color: @color__gray_light;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-unchecked-symbolic");
+}
+menuitem > check:checked {
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-checked-symbolic");
+}
+menuitem > check:indeterminate {
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-style: symbolic;
+  -gtk-icon-source: -gtk-icontheme("gtk-checkbox-semi-symbolic");
+}
+menuitem > check:hover {
+  border: 1px solid alpha(@color__orange_light, 0.5);
+  color: @color__orange_light;
+}
+menuitem > check:dir(ltr) {
+  margin-right: 5px;
+}
+menuitem > check:dir(rtl) {
+  margin-left: 5px;
+}
+popover modelbutton > check:hover {
+  transition: 0;
+  border: 1px solid alpha(@color__orange_light, 0.5);
+  color: @color__orange_light;
+}

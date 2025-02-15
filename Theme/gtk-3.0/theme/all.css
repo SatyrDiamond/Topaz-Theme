@@ -1,0 +1,18 @@
+* {
+  -gtk-icon-shadow: none;
+  -gtk-icon-palette: success @success_color, warning @warning_color,
+    error @error_color, info @info_color;
+  -gtk-icon-effect: none;
+  -GtkTreeView-horizontal-separator: 0;
+  -GtkTextView-cursor-visible: 1;
+  -GtkTextView-error-underline-color: @warning_color;
+  -GtkTextView-monospace: 1;
+  -GtkTreeView-vertical-separator: 0;
+  -GtkTreeView-grid-line-width: 0;
+  -GtkTreeView-grid-line-pattern: "\x01\x01";
+  -GtkTreeView-tree-line-width: 1;
+  -GtkTreeView-tree-line-pattern: "\x01\x01";
+  -GtkTreeView-expander-size: 14;
+  caret-color: @color__gray_light;
+  -gtk-secondary-caret-color: @color__gray_light;
+}

@@ -1,0 +1,221 @@
+window > box#DesktopMainBox * {
+  animation: none;
+  text-shadow: none;
+  transition: none;
+  border-image: none;
+}
+
+window
+  > box#DesktopMainBox
+  #DesktopMainTable
+  #DesktopHbox
+  grid#CanvasTableWrapper
+  grid#CanvasTable
+  scrollbar#VerticalScrollbar
+  contents {
+  margin: 0;
+  min-width: 18px;
+  padding: 0;
+  background: @color__orange_dark;
+}
+window
+  > box#DesktopMainBox
+  #DesktopMainTable
+  #DesktopHbox
+  grid#CanvasTableWrapper
+  grid#CanvasTable
+  scrollbar#HorizontalScrollbar
+  contents {
+  margin: 0;
+  min-height: 18px;
+  padding: 0;
+  background: @color__orange_dark;
+}
+window > box#DesktopMainBox #DockScrolledWindow scrollbar > contents {
+  border: 1px solid @border_color;
+  margin: 0;
+  min-height: 18px;
+  padding: 0;
+  background: @color__orange_dark;
+}
+window
+  > box#DesktopMainBox
+  #DesktopMainTable
+  #DesktopHbox
+  grid#CanvasTableWrapper
+  grid#CanvasTable
+  button#StickyZoom {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: 0 0;
+  box-shadow: none;
+  border-left: 1px solid @border_color;
+}
+window
+  > box#DesktopMainBox
+  #DesktopMainTable
+  #DesktopHbox
+  grid#CanvasTableWrapper
+  grid#CanvasTable
+  button#CMS_Adjust {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: 0 0;
+  box-shadow: none;
+}
+window > box#DesktopMainBox #InkscapePanel notebook {
+  border: 1px solid @border_color;
+}
+window
+  > box#DesktopMainBox
+  #DesktopMainTable
+  #DesktopHbox
+  grid#CanvasTableWrapper
+  grid#CanvasTable
+  button
+  image {
+  min-height: 16px;
+  min-width: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+window
+  > box#DesktopMainBox
+  #DesktopMainTable
+  #DesktopHbox
+  grid#CanvasTableWrapper
+  grid#CanvasTable {
+  margin: 0;
+  padding: 0;
+  background: @color__orange_dark;
+  box-shadow: none;
+  animation: none;
+}
+
+
+window > box#DesktopMainBox #DesktopStatusBar {
+  min-height: 1em;
+  min-width: 2em;
+  min-height: 32px;
+  color: inherit;
+  background: @color__gray_dark;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.05),
+    inset 0px -1px 0px 0px @border_color;
+}
+
+window > box#DesktopMainBox #DesktopStatusBar box.horizontal#SelectedStyle>grid.horizontal>box.horizontal {
+  border: 1px solid @border_color;
+  border-radius: 0;
+  margin-top:5px;
+  padding:2px;
+}
+
+window > box#DesktopMainBox #DesktopStatusBar #LayerSelector {
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: @color__orange_dark;
+  padding: 2px;
+  margin: 0.8em;
+  min-height: 4px;
+  min-width: 20px;
+}
+
+window > box#DesktopMainBox #DesktopStatusBar #CoordinateAndZStatus {
+  padding: 1em;
+  margin: 0.8em;
+  min-height: 4px;
+  min-width: 20px;
+}
+
+#DesktopMainTable > box.vertical#InkscapePanel {
+  min-height: 32px;
+  color: inherit;
+  background: @color__gray_dark;
+  border-top: 1px solid @border_color;
+  border-bottom: 1px solid @border_color;
+}
+
+#DesktopMainTable toolbar#ToolToolbar button {
+  padding: 0px;
+}
+
+#DesktopMainTable toolbar#ToolToolbar button image{
+  padding:6px;
+}
+
+#InkScale{
+margin:5px 2px;}
+
+#InkSpinScale>spinbutton{
+margin:5px;
+border-radius:2px;
+border:1px solid @border_color}
+
+grid#CanvasTable scrollbar.right.vertical > contents,
+grid#CanvasTable scrollbar.vertical:dir(ltr) > contents {
+  margin: 0;
+  min-width: 12px;
+  border-left: 1px solid @border_color;
+  background: @color__orange_dark;
+}
+grid#CanvasTable scrollbar.left.vertical > contents,
+grid#CanvasTable scrollbar.vertical:dir(rtl) > contents {
+  margin: 0;
+  min-width: 12px;
+  border-right: 1px solid @border_color;
+  background: @color__orange_dark;
+}
+grid#CanvasTable scrollbar.bottom.horizontal > contents,
+grid#CanvasTable scrollbar.horizontal > contents {
+  margin: 0;
+  min-height: 12px;
+  border-top: 1px solid @border_color;
+  background: @color__orange_dark;
+}
+grid#CanvasTable scrollbar.top.horizontal > contents {
+  margin: 0;
+  min-height: 12px;
+  border-bottom: 1px solid @border_color;
+  background: @color__orange_dark;
+}
+grid#CanvasTable scrollbar.bottom.horizontal > contents > button.down,
+grid#CanvasTable scrollbar.bottom.horizontal > contents > button.up,
+grid#CanvasTable scrollbar.horizontal > contents > button.down,
+grid#CanvasTable scrollbar.horizontal > contents > button.up,
+grid#CanvasTable scrollbar.left.vertical > contents > button.down,
+grid#CanvasTable scrollbar.left.vertical > contents > button.up,
+grid#CanvasTable scrollbar.right.vertical > contents > button.down,
+grid#CanvasTable scrollbar.right.vertical > contents > button.up,
+grid#CanvasTable scrollbar.top.horizontal > contents > button.down,
+grid#CanvasTable scrollbar.top.horizontal > contents > button.up,
+grid#CanvasTable scrollbar.vertical > contents > button.down,
+grid#CanvasTable scrollbar.vertical > contents > button.up,
+grid#CanvasTable scrollbar > contents > button:not(.flat):not(:checked):not(:active) {
+  -gtkarrow-arrow-scaling: 1;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-source: -gtk-icontheme("arrow-down-symbolic");
+  min-height: 10px;
+  min-width: 10px;
+  border: 0;
+  border-radius: 0;
+  background: 0 0;
+  background-image: none;
+  box-shadow: none;
+}
+
+grid#CanvasTable scrollbar.horizontal > contents > trough > slider,
+grid#CanvasTable scrollbar.vertical > contents > trough > slider {
+  margin: 2px 0;
+  min-width: 8px;
+  min-height: 35px;
+  border-radius: 2px;
+  background: @color__orange_mid;
+}
+grid#CanvasTable scrollbar.horizontal > contents > trough > slider {
+  margin: 0 2px;
+  min-height: 8px;
+  min-width: 35px;
+}

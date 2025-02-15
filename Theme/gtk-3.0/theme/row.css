@@ -1,0 +1,27 @@
+row {
+  padding: 1px 6px;
+}
+row.activatable:active,
+row.activatable:selected,
+row.sidebar-row:selected,
+row.sidebar-row:selected image,
+row.sidebar-row:selected label {
+  background: @color__orange_mid;
+  color: @color__orange_light;
+}
+row.activatable:hover:not(:selected) {
+  color: @color__orange_light;
+  background: alpha(@color__orange_mid, 0.2);
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+row.sidebar-row {
+  padding: 4px 10px;
+}
+row.sidebar-row image {
+  -gtk-icon-style: symbolic;
+}
+row.sidebar-row label {
+  margin: 0 5px;
+}

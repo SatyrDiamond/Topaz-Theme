@@ -1,0 +1,50 @@
+MsdOsdWindow.background.osd,
+MsdOsdWindow.background.osd.msd-osd-window-solid {
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2);
+  border: 1px solid @dark_border_color;
+  color: @dark_fg_color;
+}
+MsdOsdWindow.background.osd {
+  border-radius: 3px;
+  background: alpha(@dark_bg_color, 0.9);
+}
+MsdOsdWindow.background.osd.msd-osd-window-solid {
+  border-radius: 0;
+  background: @dark_bg_color;
+}
+MsdOsdWindow.background.osd .trough {
+  min-width: 100px;
+  min-height: 10px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.4);
+}
+MsdOsdWindow.background.osd .progressbar {
+  margin: -1px;
+  min-height: 10px;
+  background-size: 28px;
+  border: 1px solid shade(@color__orange_mid, 0.3);
+  border-radius: 2px;
+  background-image: linear-gradient(
+      180deg,
+      alpha(@dark_hilight_color, 0.2) 0%,
+      alpha(@dark_hilight_color, 0) 69%,
+      alpha(@darken_color, 0) 70%,
+      alpha(@darken_color, 0.05)
+    ),
+    repeating-linear-gradient(
+      45deg,
+      shade(@color__orange_mid, 0.8),
+      shade(@color__orange_mid, 0.8) 5px,
+      shade(@color__orange_mid, 1.1) 5px,
+      shade(@color__orange_mid, 1.1) 10px
+    );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    inset 0px -2px 0px 0px alpha(@shadow_color, 0.05);
+}

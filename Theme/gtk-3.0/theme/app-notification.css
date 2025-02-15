@@ -1,0 +1,28 @@
+revealer.bottom > .app-notification,
+revealer.top > .app-notification,
+revealer.left > .app-notification,
+revealer.right > .app-notification {
+  border: 1px solid @border_color;
+  padding: 5px;
+  background: shade(@color__orange_dark,1.1);
+}
+revealer.top > .app-notification{
+  margin-top:-1px;
+  border-radius: 0 0 2px 2px;
+  border-top:0;}
+revealer.bottom > .app-notification {
+  margin-bottom:-1px;
+  border-bottom:0;
+  border-radius: 2px 2px 0 0;
+}
+revealer.left > .app-notification{
+  margin-left:-1px;
+  border-radius: 0 2px 2px 0;
+  border-left:0;}
+revealer.right > .app-notification {
+  border-right:0;
+  border-radius: 2px 0 0 2px;
+}
+frame.app-notification > box {
+  padding: 2px;
+}

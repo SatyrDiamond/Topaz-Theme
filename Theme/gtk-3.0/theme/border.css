@@ -1,0 +1,71 @@
+frame,
+frame > label {
+  margin: 2px;
+}
+window > frame {
+  margin: 0;
+}
+frame > border:not(.flat) {
+  border: 1px solid @border_color;
+  border-radius: 2px;
+}
+frame.border-groove,
+frame.border-inset {
+  margin: 2px;
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: alpha(@darken_color, 0.03);
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.05),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.05);
+}
+frame.border-outset,
+frame.border-ridge {
+  margin: 2px;
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: alpha(@color__orange_mid, 0.04);
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1),
+    0px 1px 0px 0px alpha(@shadow_color, 0.05);
+}
+frame.border-outset:disabled,
+frame.border-ridge:disabled {
+  box-shadow: 0 1px 0 0 alpha(#000, 0.2);
+}
+frame.border-groove > border,
+frame.border-inset > border,
+frame.border-outset > border,
+frame.border-ridge > border {
+  margin: 10px;
+  border-color: transparent;
+}
+scrolledwindow.frame {
+  margin: 2px;
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: @color__orange_dark;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.05),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.05);
+}
+border.left {
+  box-shadow: 1px 0px @border_color;
+}
+border.right {
+  box-shadow: -1px 0px @border_color;
+}
+border.top {
+  box-shadow: 0px -1px @border_color;
+}
+border.bottom {
+  box-shadow: 0px 1px @border_color;
+}
+
+dialog>box.vertical.dialog-vbox>grid.vertical:only-child>notebook:only-child {
+  border: 1px solid @border_color;
+  border-radius: 2px;
+}
+actionbar > revealer > box { 
+  padding:4px;
+  border-top:1px solid @border_color; }
+
+dialog>.dialog-vbox>notebook:not(.frame){
+border:0px;}

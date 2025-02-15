@@ -1,0 +1,6 @@
+scrolledwindow > textview.gedit-view.sourceview.view text:not(:selected) {
+  background: @color__orange_dark;
+}
+window.org-gnome-gedit statusbar {
+  border-top: 1px solid @border_color;
+}

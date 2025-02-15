@@ -1,0 +1,8 @@
+separator.horizontal {
+  min-height: 1px;
+  box-shadow: inset 0px 1px 0px 0px @border_color;
+}
+separator.vertical {
+  min-width: 1px;
+  box-shadow: inset 1px 0px 0px 0px @border_color;
+}

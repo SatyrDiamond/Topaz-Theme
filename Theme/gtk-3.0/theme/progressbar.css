@@ -1,0 +1,198 @@
+progressbar.horizontal > trough {
+  min-width: 100px;
+  min-height: 10px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.4);
+}
+
+progressbar.horizontal > trough > progress {
+  margin: -1px -1px;
+  min-height: 10px;
+  background-size: 28px;
+  border: 1px solid shade(@color__orange_mid, 0.6);
+  border-radius: 2px;
+  background-image: linear-gradient(
+      180deg,
+      alpha(@color__orange_mid, 0.05) 0%,
+      alpha(@color__orange_mid, 0) 69%,
+      alpha(@darken_color, 0) 70%,
+      alpha(@darken_color, 0.05)
+    ),
+    repeating-linear-gradient(
+      45deg,
+      shade(@color__orange_mid, 0.8),
+      shade(@color__orange_mid, 0.8) 5px,
+      shade(@color__orange_mid, 1.1) 5px,
+      shade(@color__orange_mid, 1.1) 10px
+    );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1),
+    inset 0px -2px 2px 0px alpha(@shadow_color, 0.05);
+}
+
+progressbar.vertical > trough {
+  min-width: 10px;
+  min-height: 100px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.3);
+}
+
+progressbar.vertical > trough > progress {
+  margin: -1px -1px;
+  min-width: 10px;
+  background-size: 28px;
+  border: 1px solid shade(@color__orange_mid, 0.6);
+  border-radius: 2px;
+  background-image: linear-gradient(
+      180deg,
+      alpha(@color__orange_mid, 0.2) 0%,
+      alpha(@color__orange_mid, 0) 69%,
+      alpha(@darken_color, 0) 70%,
+      alpha(@darken_color, 0.05)
+    ),
+    repeating-linear-gradient(
+      45deg,
+      shade(@color__orange_mid, 0.8),
+      shade(@color__orange_mid, 0.8) 5px,
+      shade(@color__orange_mid, 1.1) 5px,
+      shade(@color__orange_mid, 1.1) 10px
+    );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.2),
+    inset 0px -2px 0px 0px alpha(@shadow_color, 0.05);
+}
+
+progressbar trough.empty progress {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+levelbar.continuous > trough {
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  border: 1px solid alpha(@shadow_color, 0.35);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.3);
+}
+
+levelbar.continuous > trough > block.empty {
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 2px;
+}
+
+levelbar.continuous > trough > block.filled.low,
+levelbar.continuous > trough > block.filled.high,
+levelbar.continuous > trough > block.filled.full {
+  margin: -1px -1px;
+  min-height: 10px;
+  background-size: 28px;
+  border: 1px solid shade(@color__orange_mid, 0.6);
+  border-radius: 2px;
+  background-image: linear-gradient(
+      180deg,
+      alpha(@color__orange_mid, 0.05) 0%,
+      alpha(@color__orange_mid, 0) 69%,
+      alpha(@darken_color, 0) 70%,
+      alpha(@darken_color, 0.05)
+    ),
+    repeating-linear-gradient(
+      45deg,
+      shade(@color__orange_mid, 0.8),
+      shade(@color__orange_mid, 0.8) 5px,
+      shade(@color__orange_mid, 1.1) 5px,
+      shade(@color__orange_mid, 1.1) 10px
+    );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1),
+    inset 0px -2px 2px 0px alpha(@shadow_color, 0.05);
+}
+@keyframes progressani {
+  100% {
+    background-position: -14px 0px;
+  }
+}
+progressbar > trough > progress:not(.pulse),
+levelbar.continuous > trough > block.filled.high {
+  animation: progressani 1s linear infinite;
+}
+levelbar.discrete > trough {
+  opacity: 0;
+}
+levelbar.discrete > trough > block {
+  margin: 2px;
+  min-height: 10px;
+  border-radius: 2px;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.1),
+    alpha(@darken_color, 0.02)
+  );
+  border: 1px solid alpha(@shadow_color, 0.35);
+  box-shadow: 0px 1px 0px 0px alpha(@color__orange_mid, 0.3),
+    inset 0px -2px 0px 0px alpha(@shadow_color, 0.05);
+}
+levelbar.discrete > trough > block:first-child {
+  margin-left: 0px;
+}
+levelbar.discrete > trough > block:last-child {
+  margin-right: 0px;
+}
+levelbar.discrete > trough > block.filled.low {
+  border-color: shade(@color__gray_dark,0.5);
+  background: @error_color;
+}
+
+levelbar.discrete > trough > block.filled.high {
+  border-color: shade(@color__gray_dark,0.5);
+  background: @warning_color;
+}
+levelbar.discrete > trough > block.filled.full,
+levelbar.discrete > trough > block.filled:not(.high):not(.low) {
+  border-color: shade(@color__gray_dark,0.5);
+  background: @success_color;
+}
+
+frame > progressbar,
+frame > levelbar {
+  margin: 2px;
+}
+
+box.vertical:not(.linked) > levelbar,
+box.vertical:not(.linked) > progressbar {
+  margin: 2px 0px;
+}
+
+
+progressbar>text{
+  margin:2px;
+  padding:2px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px alpha(@shadow_color, 0.3);
+  border: 1px solid shade(@tooltip_bg_color, 0.4);
+  background: @tooltip_bg_color;
+  color: @dark_fg_color;
+}
+
+progressbar.vertical>text{
+  margin-right:14px;
+}

@@ -1,0 +1,51 @@
+switch,
+switch > slider {
+  margin: 2px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+}
+switch {
+  min-width: 14px;
+  min-height: 14px;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.3);
+}
+switch > slider {
+  min-height: 22px;
+  min-width: 22px;
+  background: @color__gray_dark;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.02) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.4),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+switch:disabled {
+  color: @inactive_fg_color;
+}
+switch:checked:not(:disabled),
+switch:checked:not(:disabled) slider {
+  color: @color__gray_light;
+  background: alpha(@success_color,0.6);
+}
+switch:checked:not(:disabled) slider {
+  background: @success_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.15);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.1) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+}

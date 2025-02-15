@@ -1,0 +1,156 @@
+button {
+  min-width: 22px;
+  min-height: 22px;
+  border-radius: 2px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid alpha(@shadow_color, 0.35);
+}
+button.text-button:not(.image-button) {
+  padding: 0 5px;
+}
+button:not(.flat):not(:checked):not(:active) {
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.02) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.1);
+}
+button.flat:not(:checked):not(:active) {
+  border-color: transparent;
+}
+button:active,
+button:checked,
+.maximized button.titlebutton.maximize {
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+}
+button:disabled:not(:checked) {
+  background-image: none;
+  box-shadow: none;
+  color: @inactive_fg_color;
+}
+button > box > label:not(:disabled) {
+  color: @color__gray_light;
+}
+button image,
+button label {
+  margin: 2px;
+}
+
+button.text-button label{
+  margin:2px 5px;
+}
+
+.horizontal.linked > button:first-child:not(:last-child):not(:only-child),
+.horizontal.linked>combobox:first-child:not(:last-child):not(:only-child) button.combo,
+toolbar.horizontal.inline-toolbar>toolitem>box>button:first-child:not(:last-child):not(:only-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+.horizontal.linked > button:not(:last-child):not(:first-child):not(:only-child),
+  .horizontal.linked>combobox:not(:last-child):not(:first-child):not(:only-child) button.combo,
+  toolbar.horizontal.inline-toolbar>toolitem>box>button:not(:last-child):not(:first-child):not(:only-child) {
+  border-radius: 0;
+  border-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.horizontal.linked > button:last-child:not(:first-child):not(:only-child),
+.horizontal.linked>combobox:last-child:not(:first-child):not(:only-child) button.combo,
+toolbar.horizontal.inline-toolbar>toolitem>box>button:last-child:not(:first-child):not(:only-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+.vertical.linked > button:first-child:not(:last-child):not(:only-child) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.vertical.linked > button:not(:last-child):not(:first-child):not(:only-child) {
+  border-radius: 0;
+  border-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.vertical.linked > button:last-child:not(:first-child):not(:only-child) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+}
+.linked.raised button:not(:active){
+  transition: all 1s ease-in;
+}
+button.circular:not(.flat) {
+  min-width: 22px;
+  min-height: 23px;
+  border-radius: 50%;
+}
+button.color > colorswatch {
+  margin: 1px;
+  border: 1px solid @border_color;
+  box-shadow: none;
+}
+button.link,
+button.link.flat,
+button.link.flat:hover,
+button.link:hover {
+  border: 1px solid transparent;
+  box-shadow: none;
+  background: 0 0;
+  background-image: none;
+}
+button.link label {
+  text-decoration: underline;
+  color: @link_color;
+}
+button.link:visited label {
+  color: @visited_link_color;
+}
+button.default:not(:disabled):not(.suggested-action):not(.destructive-action) {
+  background-color: alpha(@color__orange_mid, 0.3);
+}
+button.destructive-action:not(:disabled) {
+  background-color: alpha(@error_color, 0.7);
+}
+button.suggested-action:not(:disabled) {
+  background-color: alpha(@info_color, 0.3);
+}
+combobox button.combo cellview {
+  margin: 0 5px;
+}
+button.color > colorswatch > overlay {
+  box-shadow: none;
+}
+button separator.vertical {
+  margin: -1px 0;
+}
+button.needs-attention {
+  background-color: alpha(@info_color, 0.3);
+}
+box.vertical:not(.linked) > button,
+box.vertical:not(.linked) > combobox {
+  margin: 2px 0;
+}
+
+button.circular:not(:checked):not(:active){
+border-radius:50%;}
+
+button.circular:not(:checked):not(:active) label{
+padding:0;
+margin:0;
+min-height:0;
+min-width:0;}

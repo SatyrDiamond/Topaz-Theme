@@ -1,0 +1,4 @@
+.eom-window .sidebar {
+  border: 0;
+  border-bottom: 1px solid @border_color;
+}

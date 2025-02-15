@@ -1,0 +1,96 @@
+.lightdm-gtk-greeter .background{
+  background:none;
+}
+
+.lightdm-gtk-greeter image{
+  -gtk-icon-style: symbolic;
+  color: @color__gray_light;
+}
+.lightdm-gtk-greeter #panel_window {
+  background: none;
+  color: @color__gray_light;
+  font-weight:bold;
+}
+.lightdm-gtk-greeter #panel_window > menubar {
+  box-shadow: none;
+  background: none;
+  color: @color__gray_light;
+}
+.lightdm-gtk-greeter #panel_window > menubar > menuitem:hover {
+  box-shadow: none;
+  background: none;
+  border-radius:0px;
+}
+
+.lightdm-gtk-greeter menu {
+  border: 1px solid @dark_border_color;
+}
+
+/*darkstyle!*/
+.lightdm-gtk-greeter #login_window,
+.lightdm-gtk-greeter #restart_dialog,
+.lightdm-gtk-greeter #shutdown_dialog {
+  border-radius: 0;
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.1);
+  border: 1px solid @dark_border_color;
+  border-radius:2px;
+  background: @dark_bg_color;
+  color: @dark_fg_color;
+  caret-color: @dark_fg_color;
+  -gtk-secondary-caret-color: @dark_fg_color;
+}
+.lightdm-gtk-greeter entry {
+  caret-color: @dark_fg_color;
+  -gtk-secondary-caret-color: @dark_fg_color;
+  background: @dark_base_color;
+  color: @dark_text_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+.lightdm-gtk-greeter button:not(.flat):not(:checked):not(:active) {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.02) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1),
+    0px 1px 0px 0px alpha(@shadow_color, 0.1);
+}
+.lightdm-gtk-greeter button:active,
+.lightdm-gtk-greeter button:checked {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+}
+.lightdm-gtk-greeter infobar {
+  color: @dark_text_color;
+  text-shadow: alpha(@dark_hilight_color, 0.2) 0px 1px;
+  border: 1px solid @dark_border_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.15);
+}
+.lightdm-gtk-greeter #user_image {
+  -gtk-icon-style: requested;
+  border-radius: 3px;
+  background:rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,0,0,0.8);
+  margin: 5px;
+  box-shadow:0px 1px 0px 0px alpha(@dark_hilight_color, 0.1);
+}
+.lightdm-gtk-greeter #buttonbox_frame {
+  padding-top: 10px;
+  border-top: 1px solid @dark_border_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.052),
+    alpha(@darken_color, 0)
+  );
+  box-shadow: inset 0px 1px 0px alpha(@dark_hilight_color, 0.4);
+}

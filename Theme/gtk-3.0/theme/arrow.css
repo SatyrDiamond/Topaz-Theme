@@ -1,0 +1,50 @@
+arrow {
+  -GtkArrow-arrow-scaling: 1;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-source: -gtk-icontheme("arrow-down-symbolic");
+  min-height: 12px;
+  min-width: 12px;
+}
+
+arrow:disabled {
+  color: @inactive_fg_color;
+}
+
+expander title > arrow:dir(rtl):not(:checked),
+modelbutton.flat arrow.left,
+menu menuitem arrow:dir(rtl),
+.menu menuitem arrow:dir(rtl),
+.context-menu menuitem arrow:dir(rtl),
+notebook > header.top > tabs > arrow.down,
+notebook > header.bottom > tabs > arrow.down,
+scrollbar.horizontal button.up {
+  -gtk-icon-transform: rotate(0.25turn);
+}
+
+expander title > arrow:dir(ltr):not(:checked),
+modelbutton.flat arrow.right,
+menu menuitem arrow:dir(ltr),
+.menu menuitem arrow:dir(ltr),
+.context-menu menuitem arrow:dir(ltr),
+notebook > header.top > tabs > arrow.up,
+notebook > header.bottom > tabs > arrow.up,
+scrollbar.horizontal button.down {
+  -gtk-icon-transform: rotate(0.75turn);
+}
+
+menu > arrow.top,
+.menu > arrow.top,
+.context-menu > arrow.top,
+notebook > header.left > tabs > arrow.down,
+notebook > header.right > tabs > arrow.down,
+scrollbar.vertical button.up {
+  -gtk-icon-transform: rotate(0.5turn);
+}
+
+button box.horizontal arrow {
+  margin: 0px 5px;
+}
+
+button box.vertical arrow {
+  margin: 5px 0px;
+}

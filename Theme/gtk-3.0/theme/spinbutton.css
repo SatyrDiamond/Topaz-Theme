@@ -1,0 +1,62 @@
+spinbutton {
+  padding: 0 2px;
+  margin: 2px;
+  background: @color__orange_dark;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.05);
+}
+spinbutton.vertical {
+  padding: 2px 0;
+}
+spinbutton:disabled {
+  background-image: none;
+  background: alpha(@darken_color, 0.05);
+  box-shadow: none;
+}
+spinbutton:not(:disabled) button:not(:checked):not(:active):not(:disabled) {
+  background: shade(@color__gray_dark, 1.1);
+  box-shadow: 0px 1px 0px 0px alpha(@shadow_color, 0.05);
+}
+spinbutton.horizontal button {
+  margin: 2px 0;
+}
+spinbutton.vertical button {
+  margin: 0 2px;
+}
+spinbutton > button.down,
+spinbutton > button.up {
+  background: @color__gray_dark;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-source: -gtk-icontheme("list-add");
+}
+spinbutton > button.down {
+  -gtk-icon-source: -gtk-icontheme("list-remove");
+}
+spinbutton.horizontal > button.down:dir(ltr) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+spinbutton.horizontal > button.down:dir(rtl),
+spinbutton.horizontal > button.up:dir(ltr) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+spinbutton.horizontal > button.down:dir(rtl) {
+  border-left: 0;
+}
+spinbutton.horizontal > button.up:dir(rtl) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+}
+spinbutton button:not(.flat):not(:checked):not(:active):disabled {
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  color: @inactive_fg_color;
+}

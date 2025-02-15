@@ -1,0 +1,67 @@
+/*
+.mate-terminal{
+background:@dark_bg_color;
+color:@dark_fg_color;}
+
+.mate-terminal notebook{
+border-color:@dark_border_color;
+background:@dark_bg_color;
+color:@dark_fg_color;}
+
+.mate-terminal notebook>header{
+border-color:@dark_border_color;
+background:@dark_base_color;
+color:@dark_fg_color;}
+
+.mate-terminal notebook>header>tabs>tab label,
+.mate-terminal notebook>header>tabs>tab image{
+color:@dark_inactive_fg_color;}
+
+.mate-terminal notebook>header>tabs>tab:checked label,
+.mate-terminal notebook>header>tabs>tab:checked image{
+color:@dark_fg_color;}
+
+.mate-terminal notebook>header>tabs>tab:checked{
+border-color:@dark_border_color;
+background:@dark_bg_color;
+box-shadow:inset 1px 0px @dark_border_color,inset -1px 0px @dark_border_color;}
+
+.mate-terminal notebook>header>tabs>tab>box>button.flat#mate-terminal-tab-close-button{
+background-image:none;
+border:1px solid transparent;
+box-shadow:none;}
+
+.mate-terminal notebook>header>tabs>tab>box>button.flat#mate-terminal-tab-close-button image{
+color:@dark_inactive_fg_color;
+min-height:16px;
+min-width:16px;
+-gtk-icon-theme:'ceres-gtk-icons';
+-gtk-icon-style:symbolic;
+-gtk-icon-source:-gtk-icontheme("gtk-window-close-symbolic");}
+
+.mate-terminal notebook>header>tabs>tab:checked>box>button.flat#mate-terminal-tab-close-button image{
+color:@dark_fg_color;}
+
+.mate-terminal vte-terminal,
+.mate-terminal vte{
+background:@dark_base_color;
+color:@dark_text_color;}
+
+.mate-terminal notebook scrollbar.vertical:dir(ltr)>contents{
+border-left:1px solid @dark_border_color;
+background:inherit;}
+
+.mate-terminal notebook scrollbar.vertical:dir(rtl)>contents{
+border-right:1px solid @dark_border_color;
+background:inherit;}
+
+.mate-terminal notebook scrollbar.vertical>contents>button:not(:disabled){
+color:@dark_fg_color;}
+
+.mate-terminal notebook scrollbar.vertical>contents>button:disabled{
+color:@dark_inactive_fg_color;}
+*/
+
+.mate-terminal.fullscreen notebook {
+  margin: 0px;
+}

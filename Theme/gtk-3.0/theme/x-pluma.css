@@ -1,0 +1,16 @@
+.pluma-window scrolledwindow.frame > scrollbar.left.vertical,
+.pluma-window scrolledwindow.frame > scrollbar.right.vertical,
+.pluma-window scrolledwindow.frame > scrollbar.vertical:dir(ltr),
+.pluma-window scrolledwindow.frame > scrollbar.vertical:dir(rtl) {
+  margin: -1px;
+}
+.pluma-window scrolledwindow.frame > scrollbar.bottom.horizontal,
+.pluma-window scrolledwindow.frame > scrollbar.horizontal:not(.top) {
+  margin: -1px;
+}
+.pluma-window scrolledwindow.frame > scrollbar.top.horizontal {
+  margin: -1px;
+}
+.pluma-window menubar {
+  background: @color__gray_dark;
+}

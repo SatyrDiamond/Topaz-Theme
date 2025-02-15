@@ -1,0 +1,14 @@
+paned > separator {
+  -gtk-icon-source: none;
+  min-height: 1px;
+  min-width: 1px;
+  background: @color__gray_dark, image(@border_color);
+}
+paned.horizontal > placessidebar.sidebar:dir(ltr),
+paned.horizontal > placessidebar.sidebar:dir(rtl) {
+  border: 0;
+}
+paned.vertical separator.wide,
+paned.horizontal separator.wide {
+  -gtk-icon-source:none;
+}

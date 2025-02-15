@@ -1,0 +1,15 @@
+list:not(:selected) {
+  color: @color__orange_light;
+  background: @color__orange_dark;
+}
+list:selected {
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+list.frame {
+  border: 1px solid @border_color;
+}
+
+list.content{
+border-radius:2px;
+border:1px solid @border_color;}

@@ -1,0 +1,51 @@
+.lock-dialog {
+  border-radius: 0;
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.1);
+  border: 1px solid @dark_border_color;
+}
+.lock-dialog,
+.lock-dialog frame border,
+.lock-dialog notebook {
+  background: @dark_bg_color;
+  color: @dark_fg_color;
+}
+.lock-dialog entry,
+.lock-dialog entry:disabled {
+  caret-color: @dark_fg_color;
+  -gtk-secondary-caret-color: @dark_fg_color;
+  background: @dark_base_color;
+  color: @dark_text_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+.lock-dialog text,
+.lock-dialog textview {
+  background: @dark_base_color;
+  color: @dark_text_color;
+}
+.lock-dialog button:not(.flat):not(:checked):not(:active) {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@dark_hilight_color, 0.2) 0%,
+    alpha(@dark_hilight_color, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+.lock-dialog button:active,
+.lock-dialog button:checked {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+.lock-dialog button:disabled label {
+  color: @dark_inactive_fg_color;
+}

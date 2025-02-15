@@ -1,0 +1,57 @@
+window#XfcePanelWindow {
+  background: @dark_bg_color;
+}
+window#XfcePanelWindowWrapper {
+  background: @dark_bg_color;
+  color: @dark_fg_color;
+}
+window#XfcePanelWindow button:not(.flat):not(:checked):not(:active),
+window#XfcePanelWindowWrapper button:not(.flat):not(:checked):not(:active) {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@dark_hilight_color, 0.2) 0%,
+    alpha(@dark_hilight_color, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+window#XfcePanelWindow,
+window#XfcePanelWindow button > box > image,
+window#XfcePanelWindow button > box > label,
+window#XfcePanelWindow image,
+window#XfcePanelWindowWrapper button > image,
+window#XfcePanelWindowWrapper button > label {
+  -gtk-icon-style: regular;
+  color: @dark_fg_color;
+}
+window#XfcePanelWindow button.flat > label,
+window#XfcePanelWindowWrapper button.flat > label {
+  color: @dark_fg_color;
+}
+window#XfcePanelWindow button:active,
+window#XfcePanelWindow button:checked,
+window#XfcePanelWindowWrapper button:active,
+window#XfcePanelWindowWrapper button:checked {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+window#XfcePanelWindow entry,
+window#XfcePanelWindowWrapper entry {
+  caret-color: @dark_fg_color;
+  -gtk-secondary-caret-color: @dark_fg_color;
+  color: @dark_text_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+window#XfcePanelWindow button#clock-button {
+  font-weight: 700;
+}

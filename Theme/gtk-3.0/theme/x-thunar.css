@@ -1,0 +1,58 @@
+window.thunar
+  > grid.horizontal
+  > toolbar#location-toolbar
+  > toolbutton
+  > button
+  > image,
+window.thunar
+  > grid.horizontal
+  > toolbar#location-toolbar
+  > toolitem
+  > button
+  > image {
+  -gtk-icon-style: regular;
+}
+window.thunar
+  > grid.horizontal
+  > toolbar#location-toolbar
+  > toolitem
+  > widget
+  > box
+  > entry {
+  margin: 5px 0;
+}
+window.thunar > grid.horizontal > paned > scrolledwindow.frame.sidebar {
+  margin: 0;
+  border: 0;
+}
+window.thunar
+  > grid.horizontal
+  > paned.horizontal
+  > grid
+  > notebook
+  > stack
+  > scrolledwindow {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid @border_color;
+}
+window.thunar.background
+  scrolledwindow.frame.standard-view
+  > widget.view
+  > widget:selected {
+  background: @color__orange_mid;
+  color: @color__orange_light;
+  border-radius: 2px;
+  margin: 1px;
+}
+window.thunar
+  > grid.horizontal
+  > paned.horizontal
+  > grid
+  > notebook
+  > stack
+  > scrolledwindow
+  .rubberband {
+  border: 1px solid @border_color;
+  background-color: alpha(@color__orange_mid, 0.4);
+}

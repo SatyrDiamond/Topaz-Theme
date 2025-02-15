@@ -1,0 +1,156 @@
+window#mate-menu,
+window#mate-menu.background {
+  padding: 2px;
+  background: @dark_bg_color;
+  border: 1px solid shade(@dark_bg_color, 0.5);
+}
+
+window#mate-menu,
+window#mate-menu notebook,
+window#mate-menu viewport,
+window#mate-menu viewport grid,
+window#mate-menu > widget > box > widget > box,
+window#mate-menu > widget > box > widget > box > box > widget {
+  background: @dark_bg_color;
+}
+
+window#mate-menu > widget > box.horizontal box > label {
+  color: @dark_fg_color;
+  margin: 2px 5px;
+}
+
+window#mate-menu > widget > box.horizontal image {
+  -gtk-icon-style: regular;
+  -gtk-icon-shadow: 0px 1px 2px alpha(@shadow_color, 0.3);
+  color: @dark_fg_color;
+}
+
+window#mate-menu > widget > box.horizontal box,
+window#mate-menu > widget > box.horizontal widget {
+  background: transparent;
+}
+
+window#mate-menu > widget > box.horizontal scrolledwindow {
+  border-radius: 2px;
+  margin: 2px;
+  background: @dark_base_color;
+}
+
+window#mate-menu > widget > box.horizontal scrolledwindow > viewport {
+  color: @dark_fg_color;
+  padding: 0px 5px;
+  background: @dark_base_color;
+}
+
+window#mate-menu > widget > box.horizontal entry {
+  margin: 5px 0px;
+  caret-color: @dark_fg_color;
+  -gtk-secondary-caret-color: @dark_fg_color;
+  background: @dark_base_color;
+  color: @dark_text_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+
+window#mate-menu
+  > widget
+  > box.horizontal
+  button:not(.flat):not(:checked):not(:active) {
+  background-image: linear-gradient(
+    180deg,
+    alpha(@dark_hilight_color, 0.2) 0%,
+    alpha(@dark_hilight_color, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+window#mate-menu > widget > box.horizontal button:active,
+window#mate-menu > widget > box.horizontal button:checked {
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+
+window#mate-menu > widget > box.horizontal scrolledwindow viewport button.flat,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button.flat:hover,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button.flat:focus,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button.flat:checked,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button.flat:active,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button.flat:selected {
+}
+
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button:not(.flat),
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button:not(.flat):hover,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button:not(.flat):focus,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button:not(.flat):checked,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button:not(.flat):active,
+window#mate-menu
+  > widget
+  > box.horizontal
+  scrolledwindow
+  viewport
+  button:not(.flat):selected {
+  background: @color__orange_mid;
+  color: @color__orange_light;
+}
+
+window#mate-menu > widget > box.horizontal box grid {
+  padding: 5px;
+  background: @dark_bg_color;
+}

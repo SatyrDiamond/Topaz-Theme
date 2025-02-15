@@ -1,0 +1,19 @@
+#MyControlCenter > frame {
+  margin: 2px;
+}
+#MyControlCenter > frame > box > box > scrolledwindow.frame {
+  margin: 0;
+}
+box#slab_section_style1 button.flat:hover,
+box#slab_section_style2 button.flat:hover {
+  background: alpha(@color__orange_mid, 0.4);
+  transition-property: background;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+box#slab_section_style2 > box > label {
+  background: alpha(@color__orange_mid, 0.4);
+  color: @color__gray_light;
+  border-radius: 5px;
+  padding: 0 5px;
+}

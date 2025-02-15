@@ -1,0 +1,19 @@
+.chromium menu {
+  border: 1px solid shade(@color__gray_dark, 0.5);
+  box-shadow: 0px 0px 5px alpha(@shadow_color, 0.5);
+}
+
+menubar.chromium {
+  color: @inactive_fg_color;
+}
+
+/* impossible to change the fg color of the tooltip*/
+tooltip.chromium > label,
+tooltip.chromium > image,
+tooltip.chromium,
+.tooltip.chromium,
+.chromium tooltip,
+.chromium .tooltip {
+  background: shade(@color__gray_dark,0.7);
+  color: @color__gray_light;
+}

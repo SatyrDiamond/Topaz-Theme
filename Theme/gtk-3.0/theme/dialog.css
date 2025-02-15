@@ -1,0 +1,15 @@
+dialog
+  > box.dialog-vbox.vertical:not(.frame)
+  > box.horizontal:not(.frame)
+  > notebook {
+  border: 0;
+  border-left: 1px solid @border_color;
+}
+/*
+dialog box.dialog-action-box.horizontal 
+  > buttonbox.dialog-action-area.horizontal
+  > button.text-button:not(.toggle)
+  > label {
+  margin-top:5px;
+}
+*/

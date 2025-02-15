@@ -1,0 +1,29 @@
+.tooltip.background,
+tooltip.background {
+  background: @tooltip_bg_color;
+}
+.tooltip image,
+tooltip image {
+  -gtk-icon-style: symbolic;
+}
+.tooltip,
+.tooltip *,
+.tooltip label,
+.tooltip.background,
+.tooltip.background label window tooltip.background,
+tooltip,
+tooltip *,
+tooltip label,
+tooltip.background,
+tooltip.background label,
+tooltip.csd *,
+tooltip.csd label,
+window tooltip label,
+window tooltip.background label,
+window.tooltip,
+window.tooltip *,
+window.tooltip label,
+window.tooltip.background,
+window.tooltip.background label {
+  color: @dark_fg_color;
+}

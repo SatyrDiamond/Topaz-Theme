@@ -1,0 +1,5 @@
+box.vertical > searchbar {
+  min-height: 32px;
+  color: inherit;
+  background: @color__gray_dark;
+}

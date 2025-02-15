@@ -1,0 +1,86 @@
+UnityDecoration {
+  -UnityDecoration-extents: 35px 1px 1px 1px;
+  -UnityDecoration-input-extents: 10px;
+  -UnityDecoration-shadow-offset-x: 3px;
+  -UnityDecoration-shadow-offset-y: 3px;
+  -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.5);
+  -UnityDecoration-active-shadow-radius: 15px;
+  -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.25);
+  -UnityDecoration-inactive-shadow-radius: 5px;
+  -UnityDecoration-glow-size: 0px;
+  -UnityDecoration-glow-color: transparent;
+  -UnityDecoration-title-indent: 10px;
+  -UnityDecoration-title-fade: 0px;
+  -UnityDecoration-title-alignment: 0.5;
+}
+
+UnityDecoration .top,
+UnityDecoration .top:backdrop {
+  border: 1px solid shade(@dark_bg_color, 0.5);
+  border-bottom:1px solid @border_color;
+  border-radius:2px 2px 0px 0px;
+  color: @color__gray_light;
+  padding:0 5px;
+  min-height:34px;
+  margin:0;
+  background: @color__gray_dark;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.05),
+    alpha(@darken_color, 0.1)
+  );
+}
+
+UnityDecoration .top:backdrop{
+  color: @inactive_fg_color;
+  background-image: none;}
+
+UnityDecoration .left,
+UnityDecoration .right,
+UnityDecoration .left:backdrop,
+UnityDecoration .right:backdrop{
+  border: 1px solid shade(@dark_bg_color, 0.5);}
+
+UnityDecoration .bottom,
+UnityDecoration .bottom:backdrop {
+  background-color: @color__orange_dark;
+  border: 1px solid shade(@dark_bg_color, 0.5);}
+
+.unity-panel {
+  background:@dark_bg_color;
+  color:@dark_fg_color;
+  border-bottom: 1px solid shade(@dark_bg_color, 0.5);}
+
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+  padding-left:20px;
+  padding-right:20px;}
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover,
+.unity-panel.menubar:hover,
+.unity-panel .menubar:hover {
+  color:@color__orange_light;
+  background: @color__orange_mid;
+  border-radius: 3px;
+}
+
+@keyframes playbackmenuitem_spinner {
+to {-gtk-icon-transform: rotate(1turn); }}
+.menu IdoPlaybackMenuItem.menuitem:active {
+  -gtk-icon-source: -gtk-icontheme("gtk-busy-symbolic");
+  animation: playbackmenuitem_spinner 1s infinite linear;
+  color: @color__orange_mid;}
+
+SheetStyleDialog.unity-force-quit, 
+sheet-style-dialog.unity-force-quit {
+  border:1px solid red;
+  background-color: @color__gray_dark;
+}
+
+.unity-csd,
+.unity-csd:backdrop {
+  border: 1px solid shade(@dark_bg_color, 0.5);
+  border-top:0;
+}

@@ -1,0 +1,8 @@
+window#gnome-system-monitor headerbar:not(.titlebar) {
+  -gtk-icon-style: symbolic;
+  padding: 1px 6px;
+  min-height: 32px;
+}
+window#gnome-system-monitor headerbar:not(.titlebar):backdrop {
+  background-image: none;
+}

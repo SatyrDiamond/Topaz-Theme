@@ -1,0 +1,116 @@
+treeview.view {
+  border-color: @border_color;
+  padding: 0px 0px;
+}
+
+treeview.view:not(:selected) {
+  color: @color__orange_light;
+  background: @color__orange_dark;
+}
+
+treeview.view:selected {
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+
+treeview.view:hover:not(:selected) {
+  background: alpha(@color__orange_mid, 0.2);
+}
+
+treeview.view > header > button:not(.flat):not(:checked):not(:active),
+treeview.view > header > button:checked,
+treeview.view > header > button:active {
+  border-top: none;
+  border-color: @border_color;
+  margin: 0px;
+  padding: 2px 5px;
+  background: @color__orange_dark;
+  background-image: none;
+  box-shadow: none;
+}
+treeview.view > header > button:first-child:not(:last-child) {
+  border-left: none;
+  border-bottom-left-radius: 0px;
+}
+treeview.view > header > button:last-child:not(:first-child) {
+  border-right: none;
+  border-bottom-right-radius: 0px;
+}
+
+treeview.view > header > button:first-child:not(:last-child) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 0px;
+  margin-right: 0px;
+}
+treeview.view > header > button:not(:last-child):not(:first-child) {
+  border-radius: 0px;
+  border-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+treeview.view > header > button:last-child:not(:first-child) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0px;
+}
+scrolledwindow.frame > treeview.view > header > button:only-child {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left: 0px;
+  margin-left: 0px;
+  border-right: 0px;
+  margin-right: 0px;
+}
+
+treeview.view > header > button {
+  background-image: none;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+}
+
+treeview.view > header > button {
+  background-image: none;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+}
+
+treeview.view > header > button:checked,
+treeview.view > header > button:active {
+  box-shadow: inset 0px 1px 2px alpha(@shadow_color, 0.2);
+}
+
+treeview.separator,
+treeview.view.separator {
+  min-height: 1px;
+  color: shade(@color__gray_dark, 0.9);
+  background: image(@border_color);
+}
+
+treeview.view.trough {
+  border: 1px solid @border_color;
+  border-radius: 3px;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.04),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.3);
+}
+
+treeview.view.progressbar {
+  border: 1px solid shade(@color__orange_mid, 0.6);
+  border-radius: 3px;
+  color: @color__orange_light;
+  background: @color__orange_mid;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+}
+
+treeview.view.trough:selected {
+  border: 1px solid alpha(@shadow_color, 0.4);
+}
+
+treeview.view.progressbar:selected {
+  border: 1px solid @color__orange_light;
+  background: @color__orange_light;
+  color: @color__orange_light;
+}

@@ -1,0 +1,58 @@
+filechooser > actionbar {
+  padding: 0 5px;
+  background: shade(@color__orange_dark, 0.95);
+}
+filechooser scrolledwindow {
+  border: 1px solid @border_color;
+  margin: 2px;
+}
+filechooser
+  > box
+  > paned
+  > box
+  > box
+  > stack
+  > placesview
+  > actionbar
+  > revealer
+  > box {
+  padding: 0 5px;
+}
+filechooser > actionbar,
+filechooser > box.vertical.search-bar,
+filechooser > box > paned {
+  border-bottom: 1px solid @border_color;
+}
+filechooser {
+  background: shade(@color__gray_dark, 1.1);
+}
+filechooser > actionbar > revealer > box { 
+  padding:2px;
+  border-top:0;
+}
+dialog > box > filechooser {
+  border:1px solid @border_color;
+  border-radius:3px;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.05),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+}
+dialog > box > filechooser > actionbar,
+dialog > box > filechooser > box.vertical.search-bar,
+dialog > box > filechooser > box > paned{
+  border-bottom: 0px
+}
+
+dialog>box.vertical.dialog-vbox>filechooser.vertical{
+margin:5px 5px;
+}
+
+dialog>box.vertical.dialog-vbox>filechooser.vertical>actionbar{
+margin:5px 5px;
+background:none;
+}
+
+dialog>box.vertical.dialog-vbox>filechooser.vertical>box.vertical>paned.horizontal{
+border-top:1px solid @border_color;
+border-bottom:1px solid @border_color;
+margin:1px 0px;
+}

@@ -1,0 +1,20 @@
+iconview.view:not(:selected) {
+  color: @color__orange_light;
+  background: @color__orange_dark;
+}
+iconview.view:selected {
+  border-radius: 3px;
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+iconview.view entry {
+  box-shadow: none;
+  border: 1px solid alpha(@shadow_color, 0.6);
+  border-radius: 2px;
+}
+iconview.view:hover:not(:selected){
+  border-radius: 3px;
+  background: alpha(@color__orange_mid, 0.2);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;}

@@ -1,0 +1,91 @@
+notebook {
+  -GtkNotebook-has-backward-stepper: true;
+  -GtkNotebook-has-forward-stepper: true;
+  -GtkNotebook-has-secondary-backward-stepper: false;
+  -GtkNotebook-has-secondary-forward-stepper: false;
+}
+notebook > header.top {
+  min-height: 32px;
+  background: @color__gray_darkbit;
+  border-bottom: 1px solid @border_color;
+}
+notebook > header.bottom {
+  min-height: 32px;
+  background: @color__gray_darkbit;
+  border-top: 1px solid @border_color;
+}
+notebook > header.left {
+  min-width: 50px;
+  background: @color__gray_darkbit;
+  border-right: 1px solid @border_color;
+}
+notebook > header.right {
+  min-width: 50px;
+  background: @color__gray_darkbit;
+  border-left: 1px solid @border_color;
+}
+notebook > header.left > tabs > tab,
+notebook > header.right > tabs > tab {
+  min-height: 26px;
+}
+
+notebook > header > tabs > tab:checked image,
+notebook > header > tabs > tab:checked label {
+  color: @color__gray_light;
+}
+notebook > header.bottom > tabs > tab,
+notebook > header.top > tabs > tab {
+  padding: 0 5px;
+}
+notebook.frame {
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: alpha(#fff, 0.04);
+  box-shadow: 0px 1px 0px 0px alpha(@shadow_color, 0.05);
+}
+notebook.frame > stack {
+  box-shadow: inset 0px 1px 0px alpha(@color__orange_mid, 0.1);
+}
+notebook.frame:disabled > header.top {
+  box-shadow: none;
+}
+notebook.frame > header.bottom > tabs > tab:checked,
+notebook.frame > header.top > tabs > tab:checked {
+  background: @color__gray_dark;
+  box-shadow: inset 1px 0px @border_color, inset -1px 0px @border_color;
+}
+
+notebook.frame > header.left > tabs > tab:checked,
+notebook.frame > header.right > tabs > tab:checked {
+  background: @color__gray_dark;
+  box-shadow: inset 0px 1px @border_color, inset 0px -1px @border_color;
+}
+notebook.frame:disabled > header > tabs > tab:checked image,
+notebook.frame:disabled > header > tabs > tab:checked label {
+  color: @inactive_fg_color;
+}
+notebook:not(.frame) > header.bottom > tabs > tab:checked,
+notebook:not(.frame) > header.top > tabs > tab:checked {
+  background: @color__gray_dark;
+  box-shadow: inset 1px 0px @border_color, inset -1px 0px @border_color;
+}
+notebook:not(.frame) > header.left > tabs > tab:checked,
+notebook:not(.frame) > header.right > tabs > tab:checked {
+  background: @color__gray_dark;
+  box-shadow: inset 0px 1px @border_color, inset 0px -1px @border_color;
+}
+notebook > header > tabs > tab button,
+notebook > header > tabs > tab button:checked,
+notebook > header > tabs > tab > box > button.flat.small-button {
+  background-image: none;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+notebook tab:checked,
+notebook tab:checked label,
+notebook tab:not(:checked)
+
+notebook:only-child:not(.frame) {
+  margin: 0;
+  border: 0;
+}

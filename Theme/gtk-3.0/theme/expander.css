@@ -1,0 +1,14 @@
+expander > title > label {
+  margin: 0 10px;
+}
+expander > box {
+  margin: 2px;
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: alpha(@darken_color, 0.03);
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.05),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.05);
+}
+expander > * {
+  padding: 3px;
+}

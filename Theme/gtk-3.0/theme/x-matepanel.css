@@ -1,0 +1,245 @@
+PanelToplevel.horizontal,
+PanelToplevel.vertical {
+  min-height: 16px;
+  min-width: 16px;
+  background: @dark_base_color;
+  color: @dark_fg_color;
+}
+.mate-panel-menu-bar > grid {
+  padding: 2px;
+  color: @dark_fg_color;
+}
+.mate-panel-menu-bar PanelWidget > menubar {
+  background: 0 0;
+  background-image: none;
+  box-shadow: none;
+  margin: 0;
+}
+#PanelPlug,
+.mate-panel-menu-bar PanelApplet menubar > menuitem,
+.mate-panel-menu-bar PanelWidget > menubar > menuitem {
+  margin: 0 2px;
+  color: @dark_fg_color;
+}
+.mate-panel-menu-bar PanelApplet menubar > menuitem > label,
+.mate-panel-menu-bar PanelWidget > menubar > menuitem > label {
+  text-shadow: none;
+  color: @dark_fg_color;
+}
+.mate-panel-menu-bar PanelApplet menubar > menuitem > image,
+.mate-panel-menu-bar PanelWidget > menubar > menuitem > image {
+  min-height: 16px;
+  min-width: 16px;
+  padding: 0;
+  margin: 2px 0;
+}
+#PanelPlug {
+  background: @dark_base_color;
+  background-image: none;
+  box-shadow: none;
+  margin: 0;
+}
+#PanelPlug button:not(.flat):not(:checked):not(:active),
+PanelToplevel button:not(.flat):not(:checked):not(:active) {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@dark_hilight_color, 0.2) 0%,
+    alpha(@dark_hilight_color, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+#PanelPlug button.flat > label,
+MatePanelAppletFrameDBus,
+PanelApplet button.brisk-button label,
+PanelToplevel button.flat > label,
+button#clock-applet-button > box > label,
+button#clock-applet-button > box > box > label {
+  color: @dark_fg_color;
+}
+#PanelPlug button:active,
+#PanelPlug button:checked,
+PanelToplevel button:active,
+PanelToplevel button:checked {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+PanelApplet > button.flat {
+  padding: 0;
+}
+PanelToplevel.mate-panel-menu-bar PanelSeparator {
+  color: @dark_border_color;
+  padding: 0;
+}
+PanelToplevel.mate-panel-menu-bar > grid > PanelFrame > PanelWidget button {
+  color: transparent;
+}
+button#clock-applet-button {
+  margin: 2px;
+  padding: 2px;
+  font-weight: 700;
+}
+button#clock-applet-button:active,
+button#clock-applet-button:checked {
+  border: 1px solid transparent;
+  background: 0 0;
+  box-shadow: none;
+}
+PanelApplet > box > box > label,
+PanelApplet > box > label,
+PanelApplet > grid > label {
+  margin: 0 5px;
+  text-shadow: alpha(@dark_hilight_color, 0.6) 0px 1px;
+}
+.mate-panel-menu-bar.horizontal.top > grid,
+PanelToplevel.mate-panel-menu-bar.horizontal.top {
+  border-bottom: 1px solid shade(@dark_bg_color, 0.5);
+}
+.mate-panel-menu-bar.horizontal.bottom > grid,
+PanelToplevel.mate-panel-menu-bar.horizontal.bottom {
+  border-top: 1px solid shade(@dark_bg_color, 0.5);
+}
+.mate-panel-menu-bar.vertical.left > grid,
+PanelToplevel.mate-panel-menu-bar.vertical.left {
+  border-right: 1px solid shade(@dark_bg_color, 0.5);
+}
+.mate-panel-menu-bar.vertical.right > grid,
+PanelToplevel.mate-panel-menu-bar.vertical.right {
+  border-left: 1px solid shade(@dark_bg_color, 0.5);
+}
+PanelToplevel > grid > PanelFrame > PanelWidget > * > button {
+  min-height: 16px;
+  min-width: 16px;
+  -gtk-icon-source: none;
+}
+button#tasklist-button:not(:checked) label {
+  color: @dark_inactive_fg_color;
+}
+button#tasklist-button:not(:checked) image {
+  opacity: 0.5;
+}
+button#tasklist-button:checked label {
+  color: @dark_fg_color;
+}
+window#mate-menu {
+  border: 1px solid shade(@color__gray_dark, 0.5);
+}
+window#mate-menu scrolledwindow {
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: @color__orange_dark;
+  box-shadow: inset 0px 1px 0px 0px alpha(@darken_color, 0.05),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.05);
+}
+window#mate-menu scrolledwindow > viewport {
+  background: @color__orange_dark;
+}
+window#mate-menu scrolledwindow box > button:not(:hover) {
+  min-height: 24px;
+  box-shadow: none;
+  border: 0;
+  border-radius: 3px;
+  background: 0 0;
+}
+window#mate-menu scrolledwindow box > button:hover {
+  min-height: 24px;
+  box-shadow: none;
+  border: 0;
+  border-radius: 3px;
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+window#mate-menu scrolledwindow > viewport > box > button:not(:hover) {
+  margin-right: 12px;
+  border-radius: 3px;
+  background: 0 0;
+  box-shadow: none;
+  border: 0;
+}
+window#mate-menu scrolledwindow > viewport > box > button:hover {
+  box-shadow: none;
+  border: 0;
+  margin-right: 12px;
+  border-radius: 3px;
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+PanelApplet entry {
+  background: shade(@dark_base_color, 0.8);
+  color: @dark_text_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+
+#MatePanelPopupWindow{
+border:0px;
+background:none;
+box-shadow:none;}
+
+#MatePanelPopupWindow>frame{
+background:@dark_bg_color;
+color:@dark_fg_color;
+border-radius:3px;
+border:1px solid shade(@dark_bg_color, 0.5);}
+
+#MatePanelPopupWindow>frame>border{
+background:@dark_bg_color;
+color:@dark_fg_color;
+border:0px;}
+
+#MatePanelPopupWindow calendar{
+  color: @dark_fg_color;
+  background: @dark_base_color;
+  border-radius: 2px;
+  border: 1px solid @dark_border_color;}
+
+#MatePanelPopupWindow calendar.header {
+  color: @dark_fg_color;
+  border-bottom: 1px solid @dark_border_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@dark_hilight_color, 0.1) 0%,
+    alpha(@dark_hilight_color, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+
+#MatePanelPopupWindow button:not(.flat):not(:checked):not(:active) {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@dark_hilight_color, 0.2) 0%,
+    alpha(@dark_hilight_color, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+#MatePanelPopupWindow button:active,
+#MatePanelPopupWindow button:checked {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+#MatePanelPopupWindow image{
+-gtk-icon-style:symbolic;
+color:@dark_fg_color;
+border:0px;}

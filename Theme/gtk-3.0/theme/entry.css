@@ -1,0 +1,57 @@
+entry {
+  min-width: 22px;
+  min-height: 22px;
+  padding: 1px;
+  margin: 0;
+  background: @color__orange_dark;
+  color: @color__orange_light;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.3);
+}
+.horizontal.linked > entry:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+.horizontal.linked > entry:not(:last-child):not(:first-child) {
+  border-radius: 0;
+  border-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.horizontal.linked > entry:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+entry:disabled {
+  color: @inactive_fg_color;
+  background: shade(@color__orange_dark, 0.97);
+  box-shadow: none;
+}
+spinbutton entry,
+spinbutton:disabled entry {
+  padding: 0 2px;
+  margin: 2px;
+  background-image: none;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+.entry-tag {
+  color: @color__orange_light;
+  background: @info_color;
+}
+entry > progress {
+  box-shadow: inset 0px -3px 0px @color__orange_mid;
+}
+entry > image {
+  margin: 0 5px;
+}
+box.vertical:not(.linked) > entry {
+  margin: 2px 0;
+}

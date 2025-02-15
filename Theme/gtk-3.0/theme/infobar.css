@@ -1,0 +1,49 @@
+infobar {
+  margin: 1px;
+  color: @color__orange_light;
+  text-shadow: alpha(@color__orange_mid, 0.2) 0px 1px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: 1px solid @border_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.15);
+  background: @info_color;
+  background-image: linear-gradient(
+    0deg,
+    alpha(@color__orange_light, 0.05),
+    alpha(@color__orange_light, 0.15)
+  );
+}
+infobar.info {
+  background: @info_color;
+}
+infobar.question {
+  background: @question_color;
+}
+infobar.warning {
+  background: @warning_color;
+}
+infobar.error {
+  background: @error_color;
+}
+infobar image {
+  -gtk-icon-style: symbolic;
+  -gtk-icon-shadow: alpha(@color__orange_mid, 0.2) 0px 1px;
+}
+infobar entry{
+  background: alpha(@color__orange_mid, 0.5);
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.3);
+}
+infobar entry,
+infobar.info entry{
+  border-color:shade(@info_color,0.7);
+}
+infobar.question entry{
+  border-color:shade(@question_color,0.7);
+}
+infobar.warning entry{
+  border-color:shade(@warning_color,0.7);
+}
+infobar.error entry{
+  border-color:shade(@error_color,0.7);
+}

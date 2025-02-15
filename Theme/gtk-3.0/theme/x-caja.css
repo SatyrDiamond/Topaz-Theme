@@ -1,0 +1,310 @@
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button:not(:first-child):not(.slider-button) {
+  border-radius: 0px;
+  margin-left: -3px;
+  border-left: 0px;
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px 2px;
+  margin-left: 0px;
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button.slider-button:first-child {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button.slider-button:not(:first-child) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0px;
+  margin-left: -3px;
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button:not(:first-child):not(.slider-button) {
+  border-radius: 0;
+  margin-left: -3px;
+  border-left: 0;
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button {
+  margin-right: 0;
+  padding: 0 2px;
+  margin-left: 0;
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button.slider-button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > box.horizontal
+  > widget.caja-pathbar
+  > button.slider-button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  margin-left: -3px;
+}
+window.caja-desktop-window
+  > grid.vertical
+  > box.vertical
+  > box.vertical
+  > box.vertical
+  > scrolledwindow
+  > widget.caja-desktop.view
+  :selected,
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > notebook.caja-notebook
+  > stack
+  > box.vertical
+  > box.vertical
+  > scrolledwindow.frame.view
+  widget.view:selected {
+  background: @color__orange_mid;
+  color: @color__orange_light;
+  border-radius: 2px;
+  margin: 1px;
+}
+window.caja-desktop-window
+  > grid.vertical
+  > box.vertical
+  > box.vertical
+  > box.vertical
+  > scrolledwindow
+  widget.view
+  > widget.rubberband,
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > notebook.caja-notebook
+  > stack
+  > box.vertical
+  > box.vertical
+  > scrolledwindow.frame.view
+  widget.view
+  > widget.rubberband {
+  border: 1px solid @border_color;
+  background-color: alpha(@color__orange_mid, 0.4);
+}
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > notebook.caja-notebook {
+  border-top: 1px solid @border_color;
+}
+box.caja-side-pane:dir(ltr) {
+  margin: 0;
+  padding: 0;
+  background: @color__orange_dark;
+}
+box.caja-side-pane scrolledwindow.frame,
+box.caja-side-pane viewport.frame {
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0px solid @color__orange_dark;
+}
+box.caja-side-pane > box.horizontal:first-child {
+  margin: 0 -4px;
+  border-bottom: 1px solid @border_color;
+}
+box.caja-side-pane > notebook,
+box.caja-side-pane > notebook > stack {
+  margin-top: -2px;
+  border: 0px solid @border_color;
+}
+widget#caja-extra-view-widget {
+  margin: 0;
+  color: @color__orange_light;
+  text-shadow: alpha(@color__orange_mid, 0.2) 0px 1px;
+  font-weight: 700;
+  border-radius: 0;
+  border: 1px solid @border_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.15);
+  background: @info_color;
+  background-image: linear-gradient(
+    0deg,
+    alpha(@color__orange_light, 0.05),
+    alpha(@color__orange_light, 0.15)
+  );
+}
+widget#caja-extra-view-widget image {
+  -gtk-icon-style: symbolic;
+  -gtk-icon-shadow: alpha(@color__orange_mid, 0.2) 0px 1px;
+}
+
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > notebook.caja-notebook
+  > stack
+  > box.vertical
+  > box.vertical
+  > scrolledwindow.frame.view
+  widget.view:selected,
+window.caja-desktop-window
+  > grid.vertical
+  > box.vertical
+  > box.vertical
+  > box.vertical
+  > scrolledwindow
+  > widget.caja-desktop.view
+  *:selected {
+  background: @color__orange_mid;
+  color: @color__orange_light;
+  border-radius: 2px;
+  margin: 1px;
+}
+
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > notebook.caja-notebook
+  > stack
+  > box.vertical
+  > box.vertical
+  > scrolledwindow.frame.view
+  widget.view
+  > widget.rubberband,
+window.caja-desktop-window
+  > grid.vertical
+  > box.vertical
+  > box.vertical
+  > box.vertical
+  > scrolledwindow
+  widget.view
+  > widget.rubberband {
+  border: 1px solid @border_color;
+  background-color: alpha(@color__orange_mid, 0.4);
+}
+
+window.caja-navigation-window
+  > grid.vertical
+  > paned.horizontal
+  > box.vertical
+  > paned.horizontal
+  > box.vertical
+  > notebook.caja-notebook {
+  border-top: 1px solid @border_color;
+}
+
+box.caja-side-pane:dir(ltr) {
+  margin: 0px;
+  padding: 0px;
+  background: @color__gray_dark;
+}
+
+box.caja-side-pane scrolledwindow.frame,
+box.caja-side-pane viewport.frame {
+  margin: -0px;
+  box-shadow: none;
+  border-radius: 0px;
+  border: 0px solid @color__orange_dark;
+}
+
+box.caja-side-pane > box.horizontal:first-child {
+  margin: 0px -4px;
+  border-bottom: 1px solid @border_color;
+}
+
+box.caja-side-pane > notebook,
+box.caja-side-pane > notebook > stack {
+  margin-top: -2px;
+  border: 0px solid @border_color;
+}
+
+widget#caja-extra-view-widget {
+  margin: 0px;
+  color: @color__orange_light;
+  text-shadow: alpha(@color__orange_mid, 0.2) 0px 1px;
+  font-weight: bold;
+  border-radius: 0px;
+  border: 1px solid @border_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.15);
+  background: @info_color;
+  background-image: linear-gradient(
+    0deg,
+    alpha(@color__orange_light, 0.05),
+    alpha(@color__orange_light, 0.15)
+  );
+}
+
+widget#caja-extra-view-widget image {
+  -gtk-icon-style: symbolic;
+  -gtk-icon-shadow: alpha(@color__orange_mid, 0.2) 0px 1px;
+}

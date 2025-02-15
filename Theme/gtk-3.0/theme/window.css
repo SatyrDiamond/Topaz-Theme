@@ -1,0 +1,103 @@
+.background {
+  box-shadow: none;
+  color: @color__gray_light;
+  background: @color__gray_dark;
+}
+.background:not(:hover):not(:disabled)
+  > label:not(:disabled):not(:checked):not(:active):not(:hover) {
+  color: @color__gray_light;
+}
+label:disabled {
+  color: @inactive_fg_color;
+}
+label > accelerator {
+  color: @inactive_fg_color;
+}
+label.dim-label,
+label.greyed-label {
+  opacity: 0.4;
+}
+label.dim-label {
+  font-size: 90%;
+}
+label.counter-label,
+label.highlight,
+label.needs-attention {
+  color: @color__orange_light;
+  background: alpha(@color__orange_mid, 0.6);
+}
+link {
+  color: @link_color;
+  font-weight: 700;
+  font-family: Monospace;
+}
+link:visited {
+  color: @visited_link_color;
+}
+label link:active {
+  background: 0 0;
+}
+link:disabled {
+  color: @inactive_fg_color;
+}
+:link label,
+:visited label {
+  font-weight: 700;
+  font-family: Monospace;
+}
+.gtkstyle-fallback,
+.gtkstyle-fallback:hover {
+  color: @color__gray_light;
+  background-color: @color__gray_dark;
+}
+.gtkstyle-fallback:disabled {
+  color: @inactive_fg_color;
+  background-color: @color__gray_dark;
+}
+.gtkstyle-fallback:active,
+.gtkstyle-fallback:selected {
+  background: @color__orange_mid;
+  color: @color__orange_light;
+}
+widget.view {
+  color: @color__orange_light;
+  background: @color__orange_dark;
+}
+.view:not(:selected) {
+  color: @color__orange_light;
+  background: @color__orange_dark;
+}
+.view:selected {
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+selection {
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+image {
+  -gtk-icon-style: regular;
+}
+image:disabled {
+  -gtk-icon-effect: dim;
+  opacity: 0.5;
+}
+.view:drop(active),
+row:drop(active) {
+  background: shade(@color__orange_mid, 2.3);
+}
+.monospace {
+  font-family: monospace;
+}
+revealer > box {
+  padding: 2px;
+}
+box.vertical:not(.linked) > label {
+  margin: 2px 0;
+}
+
+window>box:last-child{
+margin-bottom:5px;}
+
+window>box:last-child>box.horizontal.linked{
+margin:0 5px;}

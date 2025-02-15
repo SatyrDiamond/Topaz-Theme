@@ -1,0 +1,14 @@
+#GeanyDialog > box.dialog-vbox.vertical > widget {
+  background: @color__gray_dark;
+}
+#GeanyDialog > box.dialog-vbox.vertical > widget > box.horizontal > label {
+  color: @color__gray_light;
+}
+#GeanyMainWindow notebook.frame {
+  background: @color__orange_dark;
+}
+
+#GeanyMainWindow paned.vertical > paned.horizontal > notebook:not(:first-child).frame > stack > box.vertical > widget > scrollbar {
+  background:@color__orange_dark;
+  margin:0px;
+}

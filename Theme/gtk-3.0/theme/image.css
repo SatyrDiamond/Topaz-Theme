@@ -1,0 +1,10 @@
+.linked.path-bar image,
+filechooserbutton.horizontal > button.file > box.horizontal > image,
+placessidebar.sidebar
+  > viewport.frame
+  > list
+  > row
+  > revealer
+  image.sidebar-icon {
+  -gtk-icon-style: regular;
+}

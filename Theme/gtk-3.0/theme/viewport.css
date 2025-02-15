@@ -1,0 +1,16 @@
+viewport.view.frame:not(:selected) {
+  color: @color__orange_light;
+  background: @color__orange_dark;
+}
+viewport.frame {
+  margin: 0;
+  border: 1px solid @border_color;
+}
+frame > box > stacksidebar > scrolledwindow > viewport.frame,
+scrolledwindow > viewport.frame {
+  margin: 0;
+  border: 0;
+}
+viewport > box > stack > box > box > frame.view > box box{
+  padding:0px;
+}

@@ -1,0 +1,16 @@
+.dconf-editor
+  > headerbar.titlebar
+  > box.centerwidget
+  > box.horizontal
+  > stack
+  > grid.horizontal
+  > stack
+  > box.horizontal.pathbar {
+  margin:3px 5px;
+}
+.dconf-editor headerbar box.pathbar label:not(:backdrop) {
+  color: @color__gray_light;
+}
+.dconf-editor box.pathbar button label:backdrop {
+  color: @inactive_fg_color;
+}

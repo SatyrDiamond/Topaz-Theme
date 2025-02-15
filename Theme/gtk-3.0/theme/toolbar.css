@@ -1,0 +1,69 @@
+toolbar,
+.toolbar {
+  padding: 2px 5px;
+  -GtkWidget-window-dragging: true;
+}
+
+toolbar.horizontal:not(.inline-toolbar):not(.osd),
+.toolbar.horizontal:not(.inline-toolbar):not(.osd),
+headerbar.toolbar:not(.titlebar) {
+  min-height: 32px;
+  color: inherit;
+  background: @color__gray_dark;
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.05),
+    inset 0px -1px 0px 0px @border_color;
+}
+toolbar.horizontal.bottom-toolbar:not(.inline-toolbar):not(.osd),
+.toolbar.horizontal.bottom-toolbar:not(.inline-toolbar):not(.osd) {
+  box-shadow: inset 0px -1px 0px 0px alpha(@color__orange_mid, 0.05),
+    inset 0px 1px 0px 0px @border_color;
+}
+toolbar.vertical:not(.inline-toolbar):not(.osd):first-child,
+.toolbar.vertical:not(.inline-toolbar):not(.osd):first-child {
+  min-width: 32px;
+  color: inherit;
+  background: @color__gray_dark;
+  box-shadow: inset 1px 0px 0px 0px alpha(@color__orange_mid, 0.05),
+    inset -1px 0px 0px 0px @border_color;
+}
+
+box.toolbar,
+grid.toolbar {
+  min-width: 0px;
+}
+
+toolbutton > button:not(:active):not(:checked),
+toolbutton > box:not(.linked) > button:not(:active):not(:checked),
+toolbar:not(.osd) toolitem > box:not(.linked) > button:not(:active):not(:checked),
+toolbar.inline-toolbar > toolbutton > button:not(:active):not(:checked),
+toolbar.inline-toolbar > toolbutton > box:not(.linked) > button:not(:active):not(:checked),
+toolbar.inline-toolbar > toolitem > box:not(.linked) > button:not(:active):not(:checked),
+toolbar.primary-toolbar > toolbutton > button:not(:active):not(:checked),
+toolbar.primary-toolbar > toolbutton > box:not(.linked) > button:not(:active):not(:checked),
+toolbar.primary-toolbar > toolitem > box:not(.linked) > button:not(.raised):not(:active):not(:checked),
+toolbar:not(.osd) > toolitem > box:not(.linked) > button.image-button:not(:active):not(:checked),
+toolbar.inline-toolbar > toolitem > box:not(.linked) > button.text-button:not(:active):not(:checked),
+toolbar.inline-toolbar > toolitem > box:not(.linked) > button.image-button:not(:active):not(:checked)  {
+  min-width: 22px;
+  min-height: 22px;
+}
+
+toolbar > separator {
+  min-width: 1px;
+  padding: 0px;
+  margin: -1px 5px;
+  background: @border_color;
+}
+
+toolbar > toolitem > box,
+toolbar > toolitem > grid,
+toolbar > toolitem > stack,
+toolbar > toolitem:not(.linked) > entry,
+toolbar > toolitem:not(.linked) > button,
+toolbar > toolitem > stackswitcher,
+toolbar > box,
+toolbar > grid,
+toolbar > stack {
+  padding: 0px;
+  margin: 4px 0px;
+}

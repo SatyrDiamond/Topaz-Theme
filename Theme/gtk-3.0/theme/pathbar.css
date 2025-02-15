@@ -1,0 +1,43 @@
+widget.linked.path-bar {
+  background: 0 0;
+}
+widget.linked.path-bar > button:first-child:not(:last-child):dir(ltr) {
+  margin-right: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+widget.linked.path-bar > button:not(:last-child):not(:first-child):dir(ltr) {
+  border-right: 0;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+widget.linked.path-bar > button:last-child:not(:first-child):dir(ltr) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+widget.linked.path-bar > button:first-child:not(:last-child):dir(rtl) {
+  margin-left: 0;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+widget.linked.path-bar > button:not(:last-child):not(:first-child):dir(rtl) {
+  border-left: 0;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+widget.linked.path-bar > button:last-child:not(:first-child):dir(rtl) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+}
+widget.linked.path-bar > button:checked {
+  font-weight: 700;
+}
+widget.linked.path-bar > button:disabled {
+  opacity: 1;
+}

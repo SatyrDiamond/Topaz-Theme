@@ -1,0 +1,45 @@
+.nautilus-window headerbar box.path-bar-box button {
+  padding: 0 5px;
+}
+.nautilus-window headerbar box.path-bar-box button label:not(:backdrop) {
+  color: @dark_fg_color;
+}
+.nautilus-window headerbar box.path-bar-box button label:backdrop {
+  color: @dark_inactive_fg_color;
+}
+.nautilus-window
+  headerbar
+  box.path-bar-box
+  button:first-child:not(:last-child):not(:only-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  margin-right: 0;
+}
+.nautilus-window
+  headerbar
+  box.path-bar-box
+  button:not(:last-child):not(:first-child):not(:only-child) {
+  border-radius: 0;
+  border-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.nautilus-window
+  headerbar
+  box.path-bar-box
+  button:last-child:not(:first-child):not(:only-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+}
+.nautilus-window placessidebar {
+  border: 0;
+}
+.nautilus-window scrolledwindow {
+  background: @color__orange_dark;
+}
+.nautilus-window scrolledwindow .rubberband {
+  border: 1px solid @border_color;
+  background-color: alpha(@color__orange_mid, 0.4);
+}

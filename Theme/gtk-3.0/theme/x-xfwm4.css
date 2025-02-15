@@ -1,0 +1,28 @@
+#xfwm-tabwin {
+  background: alpha(@dark_bg_color, 0.9);
+  color: @fark_fg_color;
+  border: 1px solid shade(@dark_bg_color, 0.5);
+  border-radius: 3px;
+  font-weight: 700;
+}
+#xfwm-tabwin button:not(:active):not(:hover) {
+  box-shadow: none;
+  border: 0;
+  border-radius: 3px;
+  background: 0 0;
+}
+#xfwm-tabwin button:active {
+  box-shadow: none;
+  border: 0;
+  border-radius: 3px;
+  background: @color__orange_mid;
+}
+#xfwm-tabwin button:hover {
+  box-shadow: none;
+  border: 0;
+  border-radius: 3px;
+  background: alpha(@color__orange_mid, 0.5);
+}
+#xfwm-tabwin button label {
+  color: @color__orange_light;
+}

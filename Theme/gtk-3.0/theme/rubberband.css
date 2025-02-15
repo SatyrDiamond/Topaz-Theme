@@ -1,0 +1,6 @@
+.rubberband,
+rubberband,
+widget.rubberband {
+  border: 1px solid @color__orange_mid;
+  background-color: alpha(@color__orange_mid, 0.4);
+}

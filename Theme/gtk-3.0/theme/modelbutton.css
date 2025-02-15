@@ -1,0 +1,13 @@
+modelbutton {
+  min-height: 24px;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin:5px 0;
+}
+modelbutton:hover {
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+modelbutton label {
+  margin: 0 5px;
+}

@@ -1,0 +1,33 @@
+menu {
+  background: shade(@color__gray_dark, 1.1);
+}
+menu > separator {
+  min-height: 1px;
+  color: @border_color;
+  background: image(@border_color);
+}
+menu > menuitem {
+  margin: 5px;
+  border-radius: 3px;
+  padding: 1px 4px;
+  min-height: 24px;
+}
+menu > menuitem:hover {
+  background: @color__gray_mid;
+}
+menuitem > label {
+  color: @color__gray_light;
+  text-shadow: none;
+}
+menu > menuitem:hover,
+menu > menuitem:hover > label,
+menuitem:hover > label {
+  color: @color__gray_light;
+  text-shadow: none;
+}
+menu > menuitem > image:dir(ltr) {
+  margin-left: 5px;
+}
+menu > menuitem > image:dir(rtl) {
+  margin-right: 5px;
+}

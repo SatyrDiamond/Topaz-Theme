@@ -1,0 +1,76 @@
+button.brisk-button {
+  font-weight:bold;
+}
+
+button.brisk-button > box > image {
+  -gtk-icon-style:symbolic;
+  color:@dark_fg_color;
+}
+
+window.brisk-menu > box button>box label {
+  color: @dark_fg_color;
+}
+
+window.brisk-menu > box button>box label:disabled {
+  color: @dark_inactive_fg_color;
+}
+
+window.brisk-menu > box image {
+  -gtk-icon-style: regular;
+  -gtk-icon-shadow: 0px 1px 2px alpha(@shadow_color, 0.3);
+  color: @dark_fg_color;
+}
+
+window.brisk-menu > box {
+  padding: 3px;
+  background: shade(@dark_bg_color, 1.2);
+  border: 1px solid shade(@dark_bg_color, 0.5);
+  border-radius: 0px;
+}
+
+window.brisk-menu > box entry {
+  caret-color: @dark_fg_color;
+  -gtk-secondary-caret-color: @dark_fg_color;
+  background: @dark_base_color;
+  color: @dark_text_color;
+  box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.09),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}
+
+window.brisk-menu > box scrolledwindow.frame {
+  background: @dark_base_color;
+  color: @dark_fg_color;
+  border-color: shade(@dark_bg_color, 0.5);
+}
+
+window.brisk-menu > box scrolledwindow.frame list {
+  background: @dark_base_color;
+  color: @dark_fg_color;
+}
+
+window.brisk-menu > box buttonbutton:not(.flat):not(:checked):not(:active),
+window.brisk-menu > box buttonbutton:not(.flat):not(:checked):not(:active):hover {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@dark_hilight_color, 0.2) 0%,
+    alpha(@dark_hilight_color, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@dark_hilight_color, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+}
+window.brisk-menu > box button:active,
+window.brisk-menu > box button:checked,
+window.brisk-menu > box button:active:hover,
+window.brisk-menu > box button:checked:hover {
+  color: @dark_fg_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@dark_hilight_color, 0.3);
+}

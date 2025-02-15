@@ -1,0 +1,3 @@
+window.ccsm-window > box.horizontal > box.vertical > scrolledwindow {
+  border: 1px solid @border_color;
+}

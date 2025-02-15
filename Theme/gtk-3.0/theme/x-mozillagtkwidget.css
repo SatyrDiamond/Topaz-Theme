@@ -1,0 +1,35 @@
+#MozillaGtkWidget textview:selected,
+#MozillaGtkWidget textview > label:selected,
+#MozillaGtkWidget textview > text:selected {
+  color: @color__orange_light;
+  background: @color__orange_mid;
+}
+#MozillaGtkWidget button:not(.flat) {
+  padding: 4px 5px;
+}
+#MozillaGtkWidget textview text:focus {
+  color: @selected_fg_Color;
+  background: @color__orange_mid;
+}
+#MozillaGtkWidget scrollbar > contents {
+  background: @color__orange_dark;
+}
+#MozillaGtkWidget scrollbar button {
+  margin: 0;
+  padding: 0;
+}
+#MozillaGtkWidget menu > menuitem:hover {
+  border-radius: 0;
+}
+#MozillaGtkWidget menu {
+  border-radius: 0;
+  border: 1px solid shade(@color__gray_dark, 0.5);
+}
+#MozillaGtkWidget menubar menuitem:hover {
+  color: @color__orange_light;
+}
+
+#MozillaGtkWidget menuitem check,
+#MozillaGtkWidget menuitem radio {
+  padding:1px;
+}

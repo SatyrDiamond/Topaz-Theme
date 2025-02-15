@@ -1,0 +1,115 @@
+.titlebar {
+  color: @color__gray_light;
+  padding:0 5px;
+  margin:0;
+  min-height: 32px;
+  background: @color__gray_dark;
+  box-shadow: inset 0px -1px 0px @border_color;
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.05),
+    alpha(@darken_color, 0.1)
+  );
+}
+
+window>box:not(.titlebar)>headerbar:not(.titlebar){
+  padding:2px 5px;
+}
+
+.titlebar:backdrop,
+headerbar:backdrop {
+  background-image: none;
+}
+
+.titlebar>headerbar>box.horizontal.linked:not(.left):not(.right),
+.titlebar>headerbar>box.horizontal:not(.left):not(.right),
+.titlebar>headerbar>button,
+.titlebar>button,
+headerbar.titlebar>box.horizontal.linked:not(.left):not(.right),
+headerbar.titlebar>box.horizontal:not(.left):not(.right),
+headerbar.titlebar>button{
+  margin:8px 0;}
+
+headerbar>leaflet>headerbar{
+margin:2px 5px;}
+
+headerbar.titlebar>leaflet>headerbar button:not(.titlebutton){
+margin:8px 2px;}
+
+
+.titlebar label.title,
+headerbar label.title {
+  color:@color__gray_light;
+  font-weight:bold;
+  padding:0;}
+.titlebar label.title:backdrop,
+headerbar label.title:backdrop {
+  color:@inactive_fg_color;}
+.titlebar label.subtitle,
+headerbar label.subtitle {
+  color: @inactive_fg_color;
+  font-size:75%;
+  padding:0;
+}
+
+.titlebar button image,
+headerbar>button image{
+  -gtk-icon-style:symbolic;
+}
+
+.titlebar button image:backdrop,
+headerbar button image:backdrop,
+.titlebar button label:backdrop,
+headerbar button label:backdrop{
+  -gtk-icon-style:symbolic;
+  color: @inactive_fg_color;
+}
+
+.titlebar button:backdrop:not(:checked):not(:active),
+headerbar button:backdrop:not(:checked):not(:active),
+.titlebar button:backdrop:not(:checked):not(:active),
+headerbar button:backdrop:not(:checked):not(:active){
+  background-image:none;
+  box-shadow:none;
+}
+
+/*ceres WM-Style*/
+
+.titlebar button.close.titlebutton > image {
+  -gtk-icon-style:symbolic;
+  min-height: 16px;
+  min-width: 16px;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-source: -gtk-icontheme("gtk-window-close-symbolic");
+}
+
+*:not(.maximized) .titlebar button.maximize.titlebutton > image {
+  -gtk-icon-style:symbolic;
+  min-height: 16px;
+  min-width: 16px;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-source: -gtk-icontheme("gtk-window-maximize-symbolic");
+}
+
+*.maximized .titlebar button.maximize.titlebutton > image {
+  -gtk-icon-style:symbolic;
+  min-height: 16px;
+  min-width: 16px;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-source: -gtk-icontheme("gtk-window-unmaximize-symbolic");
+}
+
+.titlebar button.minimize.titlebutton > image {
+  -gtk-icon-style:symbolic;
+  min-height: 16px;
+  min-width: 16px;
+  -gtk-icon-theme: "ceres-gtk-icons";
+  -gtk-icon-source: -gtk-icontheme("gtk-window-minimize-symbolic");
+}
+
+.titlebar:backdrop button.close.titlebutton > image,
+.titlebar:backdrop button.minimize.titlebutton > image,
+.titlebar:backdrop button.maximize.titlebutton > image {
+  color: @inactive_fg_color;
+}
+

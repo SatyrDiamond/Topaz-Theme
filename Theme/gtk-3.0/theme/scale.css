@@ -1,0 +1,146 @@
+scale {
+  margin: 8px;
+}
+scale > contents {
+  min-height: 18px;
+  min-width: 18px;
+}
+scale.horizontal > contents > trough {
+  min-width: 4px;
+  min-height: 4px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.2);
+}
+scale.horizontal > contents > trough > highlight:not(:disabled) {
+  margin: -1px;
+  border-radius: 2px;
+  background: @color__orange_mid;
+  border: 1px solid shade(@color__orange_mid, 0.5);
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.05),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.2) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+}
+scale.vertical > contents > trough {
+  min-width: 4px;
+  min-height: 4px;
+  border-radius: 2px;
+  border: 1px solid alpha(@shadow_color, 0.35);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@darken_color, 0.08),
+    alpha(@darken_color, 0.02)
+  );
+  box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
+    0px 1px 0px 0px alpha(@color__orange_mid, 0.4);
+}
+scale.vertical > contents > trough > highlight:not(:disabled) {
+  margin: -1px;
+  border-radius: 2px;
+  background: @color__orange_mid;
+  border: 1px solid shade(@color__orange_mid, 0.5);
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.09);
+  background-image: linear-gradient(
+    -90deg,
+    alpha(@color__orange_mid, 0.2) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+}
+scale > contents > trough > slider {
+  margin: -8px;
+  min-height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  background: @color__gray_dark;
+  border: 1px solid alpha(@shadow_color, 0.5);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.02) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.4),
+    0px 1px 0px 0px alpha(@shadow_color, 0.05),
+    -1px 1px 1px 0px alpha(@shadow_color, 0.05),
+    1px 1px 1px 0px alpha(@shadow_color, 0.05);
+}
+scale > contents > trough > slider:disabled {
+  border: 1px solid alpha(@shadow_color, 0.35);
+}
+scale > contents > trough > slider:not(:disabled) {
+  margin: -8px;
+  min-height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  background: @color__orange_mid;
+  border: 1px solid shade(@color__orange_mid, 0.4);
+  background-image: linear-gradient(
+    180deg,
+    alpha(@color__orange_mid, 0.02) 0%,
+    alpha(@color__orange_mid, 0) 69%,
+    alpha(@darken_color, 0) 70%,
+    alpha(@darken_color, 0.05)
+  );
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.2),
+    0px 1px 0px 0px alpha(@shadow_color, 0.05),
+    -1px 1px 1px 0px alpha(@shadow_color, 0.05),
+    1px 1px 1px 0px alpha(@shadow_color, 0.05);
+}
+scale.horizontal > marks > mark > indicator {
+  min-height: 4px;
+  min-width: 1px;
+  margin: 3px 0;
+  color: @inactive_fg_color;
+}
+scale.vertical > marks > mark > indicator {
+  min-height: 1px;
+  min-width: 4px;
+  margin: 0 3px;
+  color: @inactive_fg_color;
+}
+menu > menuitem scale.horizontal > contents > trough {
+  min-width: 15em;
+  min-height: 1em;
+  border-radius: 0.5em;
+  border: 0;
+  background: rgba(0,0,0,.2);
+  background-image:none;
+  box-shadow: none;
+}
+
+menu > menuitem scale.horizontal > contents > trough > highlight {
+  margin:0px;
+  min-width: 1em;
+  border-radius: 0.5em;
+  border: 0;
+  background: rgba(255,255,255,.5);
+  background-image:none;
+  box-shadow: none;
+}
+
+menu > menuitem scale.horizontal > contents > trough > slider {
+  margin: 0px 1em;
+  min-width: 1em;
+  min-height: 1em;
+  border-radius: 0.5em;
+  border: 0;
+  background: transparent;
+  background-image:none;
+  box-shadow: none;
+}

@@ -1,0 +1,6 @@
+paned.color-profiles {
+  border: 1px solid @border_color;
+  border-radius: 2px;
+  background: @color__orange_dark;
+  box-shadow: 0px 1px 0px 0px alpha(@color__orange_mid, 0.05);
+}
