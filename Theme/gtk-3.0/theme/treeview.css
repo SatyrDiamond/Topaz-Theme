@@ -24,7 +24,8 @@ treeview.view > header > button:active {
   border-color: @border_color;
   margin: 0px;
   padding: 2px 5px;
-  background: @color__orange_dark;
+  color: @color__gray_light;
+  background: @color__gray_dark;
   background-image: none;
   box-shadow: none;
 }

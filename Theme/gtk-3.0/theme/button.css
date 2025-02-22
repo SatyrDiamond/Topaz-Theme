@@ -12,12 +12,12 @@ button.text-button:not(.image-button) {
 button:not(.flat):not(:checked):not(:active) {
   background-image: linear-gradient(
     180deg,
-    alpha(@color__orange_mid, 0.02) 0%,
-    alpha(@color__orange_mid, 0) 69%,
+    alpha(@color__dark_mid, 0.02) 0%,
+    alpha(@color__dark_mid, 0) 69%,
     alpha(@darken_color, 0) 70%,
     alpha(@darken_color, 0.05)
   );
-  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.2),
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__dark_mid, 0.2),
     0px 1px 0px 0px alpha(@shadow_color, 0.1);
 }
 button.flat:not(:checked):not(:active) {
@@ -32,7 +32,7 @@ button:checked,
     alpha(@darken_color, 0.02)
   );
   box-shadow: inset 0px 1px 3px alpha(@shadow_color, 0.1),
-    0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+    0px 1px 0px 0px alpha(@color__dark_mid, 0.1);
 }
 button:disabled:not(:checked) {
   background-image: none;
@@ -121,7 +121,7 @@ button.link:visited label {
   color: @visited_link_color;
 }
 button.default:not(:disabled):not(.suggested-action):not(.destructive-action) {
-  background-color: alpha(@color__orange_mid, 0.3);
+  background-color: alpha(@color__dark_mid, 0.3);
 }
 button.destructive-action:not(:disabled) {
   background-color: alpha(@error_color, 0.7);

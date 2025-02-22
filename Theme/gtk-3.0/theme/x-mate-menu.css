@@ -146,8 +146,8 @@ window#mate-menu
   scrolledwindow
   viewport
   button:not(.flat):selected {
-  background: @color__orange_mid;
-  color: @color__orange_light;
+  background: @color__gray_mid;
+  color: @color__gray_light;
 }
 
 window#mate-menu > widget > box.horizontal box grid {

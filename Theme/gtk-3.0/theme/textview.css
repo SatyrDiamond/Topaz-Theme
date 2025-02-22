@@ -16,4 +16,7 @@ textview.view.sourceview window {
   font: initial;
 }
 
-textview text { color: @color__orange_light; background-color: @color__orange_dark; }
+textview text {
+  color: @color__orange_light;
+  background-color: @color__orange_dark;
+}

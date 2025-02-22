@@ -1,6 +1,6 @@
 filechooser > actionbar {
   padding: 0 5px;
-  background: shade(@color__orange_dark, 0.95);
+  background: shade(@color__gray_dark, 0.95);
 }
 filechooser scrolledwindow {
   border: 1px solid @border_color;
@@ -34,7 +34,7 @@ dialog > box > filechooser {
   border:1px solid @border_color;
   border-radius:3px;
   box-shadow: inset 0px 1px 0px 0px alpha(@shadow_color, 0.05),
-    0px 1px 0px 0px alpha(@color__orange_mid, 0.1);
+    0px 1px 0px 0px alpha(@color__gray_mid, 0.1);
 }
 dialog > box > filechooser > actionbar,
 dialog > box > filechooser > box.vertical.search-bar,

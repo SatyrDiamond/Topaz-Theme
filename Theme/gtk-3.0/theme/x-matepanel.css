@@ -136,12 +136,12 @@ window#mate-menu {
 window#mate-menu scrolledwindow {
   border: 1px solid @border_color;
   border-radius: 2px;
-  background: @color__orange_dark;
+  background: @color__gray_dark;
   box-shadow: inset 0px 1px 0px 0px alpha(@darken_color, 0.05),
-    0px 1px 0px 0px alpha(@color__orange_mid, 0.05);
+    0px 1px 0px 0px alpha(@color__gray_mid, 0.05);
 }
 window#mate-menu scrolledwindow > viewport {
-  background: @color__orange_dark;
+  background: @color__gray_dark;
 }
 window#mate-menu scrolledwindow box > button:not(:hover) {
   min-height: 24px;
@@ -155,8 +155,8 @@ window#mate-menu scrolledwindow box > button:hover {
   box-shadow: none;
   border: 0;
   border-radius: 3px;
-  color: @color__orange_light;
-  background: @color__orange_mid;
+  color: @color__gray_light;
+  background: @color__gray_mid;
 }
 window#mate-menu scrolledwindow > viewport > box > button:not(:hover) {
   margin-right: 12px;
@@ -170,8 +170,8 @@ window#mate-menu scrolledwindow > viewport > box > button:hover {
   border: 0;
   margin-right: 12px;
   border-radius: 3px;
-  color: @color__orange_light;
-  background: @color__orange_mid;
+  color: @color__gray_light;
+  background: @color__gray_mid;
 }
 PanelApplet entry {
   background: shade(@dark_base_color, 0.8);

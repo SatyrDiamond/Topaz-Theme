@@ -1,6 +1,6 @@
 .tooltip.background,
 tooltip.background {
-  background: @tooltip_bg_color;
+  background: @color__gray_dark;
 }
 .tooltip image,
 tooltip image {
@@ -25,5 +25,5 @@ window.tooltip *,
 window.tooltip label,
 window.tooltip.background,
 window.tooltip.background label {
-  color: @dark_fg_color;
+  color: @color__gray_light;
 }

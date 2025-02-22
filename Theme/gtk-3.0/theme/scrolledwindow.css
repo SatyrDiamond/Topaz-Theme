@@ -7,6 +7,15 @@ scrollbar {
   -GtkScrollbar-has-forward-stepper:false;
   -GtkScrollbar-has-secondary-backward-stepper:false;
   -GtkScrollbar-has-secondary-forward-stepper:false;
+  background: @color__gray_dark;
+}
+
+scrollbar.horizontal > contents > trough > slider {
+  border-top: 1px solid @color__gray_darker;
+}
+
+scrollbar.vertical > contents > trough > slider {
+  border-left: 1px solid @color__gray_darker;
 }
 
 scrollbar > contents > button {
@@ -16,95 +25,38 @@ scrollbar > contents > button {
   border:none;
   box-shadow:none;
 }
-scrollbar.right.vertical:hover > contents,
-scrollbar.vertical:dir(ltr):hover > contents {
-  margin: 0;
-  min-width: 12px;
-  border-left: 1px solid @border_color;
-  background: shade(@color__orange_dark,0.95);
-}
-scrollbar.left.vertical:hover > contents,
-scrollbar.vertical:dir(rtl):hover > contents {
-  margin: 0;
-  min-width: 12px;
-  border-right: 1px solid @border_color;
-  background: shade(@color__orange_dark,0.95);
-}
-scrollbar.bottom.horizontal:hover > contents,
-scrollbar.horizontal:hover > contents {
-  margin: 0;
-  min-height: 12px;
-  border-top: 1px solid @border_color;
-  background: shade(@color__orange_dark,0.95);
-}
-scrollbar.top.horizontal:hover > contents {
-  margin: 0;
-  min-height: 12px;
-  border-bottom: 1px solid @border_color;
-  background: shade(@color__orange_dark,0.95);
-}
-scrollbar.bottom.horizontal:hover > contents > button.down,
-scrollbar.bottom.horizontal:hover > contents > button.up,
-scrollbar.horizontal:hover > contents > button.down,
-scrollbar.horizontal:hover > contents > button.up,
-scrollbar.left.vertical:hover > contents > button.down,
-scrollbar.left.vertical:hover > contents > button.up,
-scrollbar.right.vertical:hover > contents > button.down,
-scrollbar.right.vertical:hover > contents > button.up,
-scrollbar.top.horizontal:hover > contents > button.down,
-scrollbar.top.horizontal:hover > contents > button.up,
-scrollbar.vertical:hover > contents > button.down,
-scrollbar.vertical:hover > contents > button.up,
-scrollbar:hover > contents > button:not(.flat):not(:checked):not(:active) {
-  -gtkarrow-arrow-scaling: 1;
-  -gtk-icon-theme: "ceres-gtk-icons";
-  -gtk-icon-source: -gtk-icontheme("arrow-down-symbolic");
-  min-height: 10px;
-  min-width: 10px;
-  border: 0;
-  border-radius: 0;
-  background: 0 0;
-  background-image: none;
-  box-shadow: none;
-}
-scrollbar.horizontal:not(:hover) > contents > trough > slider,
-scrollbar.vertical:not(:hover) > contents > trough > slider {
+scrollbar.horizontal > contents > trough > slider,
+scrollbar.vertical > contents > trough > slider {
   margin: 2px 0;
-  min-width: 5px;
-  min-height: 35px;
   border-radius: 2px;
-  background: @color__orange_mid;
-}
-scrollbar.horizontal:not(:hover) > contents > trough > slider {
-  margin: 0 2px;
-  min-height: 5px;
-  min-width: 35px;
+  border: 1px solid @color__gray_dark;
+  background: @color__gray_mid;
 }
 
-scrollbar.horizontal:hover > contents > trough > slider,
-scrollbar.vertical:hover > contents > trough > slider {
+scrollbar.vertical > contents > trough > slider {
   margin: 2px 0;
-  min-width: 8px;
-  min-height: 35px;
-  border-radius: 2px;
-  background: @color__orange_mid;
+  min-width: 12px;
+  min-height: 100px;
 }
-scrollbar.horizontal:hover > contents > trough > slider {
-  margin: 0 2px;
-  min-height: 8px;
-  min-width: 35px;
+
+scrollbar.horizontal > contents > trough > slider {
+  margin: 2px 0;
+  min-height: 12px;
+  min-width: 100px;
 }
+
+
 frame > box:not(:only-child) > scrolledwindow,
 window > box > notebook:not(.frame) {
   margin: 2px;
   border: 1px solid @border_color;
 }
 window > box > notebook:not(.frame) {
-  background: @color__orange_dark;
+  background: @color__gray_dark;
 }
 .frame > scrolledwindow,
 frame > scrolledwindow {
-  background: @color__orange_dark;
+  background: @color__gray_dark;
   margin: 0;
   border: 0;
 }

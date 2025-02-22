@@ -10,12 +10,12 @@ headerbar.toolbar:not(.titlebar) {
   min-height: 32px;
   color: inherit;
   background: @color__gray_dark;
-  box-shadow: inset 0px 1px 0px 0px alpha(@color__orange_mid, 0.05),
+  box-shadow: inset 0px 1px 0px 0px alpha(@color__gray_mid, 0.05),
     inset 0px -1px 0px 0px @border_color;
 }
 toolbar.horizontal.bottom-toolbar:not(.inline-toolbar):not(.osd),
 .toolbar.horizontal.bottom-toolbar:not(.inline-toolbar):not(.osd) {
-  box-shadow: inset 0px -1px 0px 0px alpha(@color__orange_mid, 0.05),
+  box-shadow: inset 0px -1px 0px 0px alpha(@color__gray_mid, 0.05),
     inset 0px 1px 0px 0px @border_color;
 }
 toolbar.vertical:not(.inline-toolbar):not(.osd):first-child,
@@ -23,7 +23,7 @@ toolbar.vertical:not(.inline-toolbar):not(.osd):first-child,
   min-width: 32px;
   color: inherit;
   background: @color__gray_dark;
-  box-shadow: inset 1px 0px 0px 0px alpha(@color__orange_mid, 0.05),
+  box-shadow: inset 1px 0px 0px 0px alpha(@color__gray_mid, 0.05),
     inset -1px 0px 0px 0px @border_color;
 }
 
